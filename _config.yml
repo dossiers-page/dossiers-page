@@ -1,0 +1,25 @@
+# site settings
+title: Data Wanderer
+subtitle: Garbage in-->Garbage Out
+email: sahyagiri@gmail.com
+description: Data Exploration/Books&Films/Photographs
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: #
+author: Gireesan Namboothiri P. 
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 2
+
+# social settings
+github_url: https://github.com/sahyagiri
+instagram_url: https://instagram.com/sahyagiri
+linkedin_url: https://www.linkedin.com/in/sahyagiri
+pinterest_url:
+twitter_url: https://twitter.com/sahyagiri
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
