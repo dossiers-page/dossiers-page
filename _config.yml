@@ -15,11 +15,14 @@ logo: 'null'
 masthead_title: null
 words_per_minute: 200
 comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light" # "github-dark"
-    issue_term: "pathname"
-    
+ # provider: "utterances"
+ # utterances:
+ #   theme: "github-light" # "github-dark"
+ #   issue_term: "pathname"
+  provider: 'staticman'   
+  staticman:
+    branch    : "master"
+    endpoint  : https://dev.staticman.net/v3/entry/github/sahyagiri/sahyagiri/master 
 reCaptcha:
   siteKey: null
   secret: null
