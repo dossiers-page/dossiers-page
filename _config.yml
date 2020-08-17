@@ -7,18 +7,20 @@ name:
 description: >-
   This is my personal blog with opinions and views on what I read/watch/explore.
   This does not convey or represent views of my employer(s)
-url: 'https://sahyagiri.github.io'
-baseurl: '/'
-repository: 'sahyagiri'
+url: 'null'
+baseurl: null
+repository: 'null'
 teaser: 'null'
 logo: 'null'
 masthead_title: null
 words_per_minute: 200
 comments:
+ comments:
   provider: "utterances"
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
+    
 reCaptcha:
   siteKey: null
   secret: null
@@ -178,6 +180,6 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
-      comments: null
+      comments: true
       share: true
       related: true
