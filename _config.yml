@@ -15,7 +15,6 @@ logo: 'null'
 masthead_title: null
 words_per_minute: 200
 comments:
- comments:
   provider: "utterances"
   utterances:
     theme: "github-light" # "github-dark"
