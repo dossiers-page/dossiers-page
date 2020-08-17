@@ -15,21 +15,10 @@ logo: 'null'
 masthead_title: null
 words_per_minute: 200
 comments:
-  provider: 'utterances'
-  disqus:
-    shortname: null
-  discourse:
-    server: null
-  facebook:
-    appid: null
-    num_posts: null
-    colorscheme: null
+  provider: "utterances"
   utterances:
-    theme: "github-light"
-    issue_term: null
-  staticman:
-    branch: null
-    endpoint: null
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
 reCaptcha:
   siteKey: null
   secret: null
