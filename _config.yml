@@ -19,7 +19,7 @@ comments:
  # utterances:
  #   theme: "github-light" # "github-dark"
  #   issue_term: "pathname"
-  provider: 'staticman'   
+  provider: 'staticman_v2'   
   staticman:
     branch    : "master"
     endpoint  : https://dev.staticman.net/v3/entry/github/sahyagiri/sahyagiri/master 
