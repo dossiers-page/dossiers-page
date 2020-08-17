@@ -22,7 +22,7 @@ comments:
   provider: 'staticman_v2'   
   staticman:
     branch    : "master"
-    endpoint  : https://dev.staticman.net/v3/entry/github/sahyagiri/sahyagiri/master 
+    endpoint  : https://dev.staticman.net/v3/entry/github/
 reCaptcha:
   siteKey: null
   secret: null
