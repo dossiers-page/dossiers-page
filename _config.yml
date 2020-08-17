@@ -9,7 +9,7 @@ description: >-
   This does not convey or represent views of my employer(s)
 url: 'https://sahyagiri.github.io'
 baseurl: '/'
-repository: '/'
+repository: 'sahyagiri/sahyagiri.github.io'
 teaser: 'null'
 logo: 'null'
 masthead_title: null
