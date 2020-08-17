@@ -7,8 +7,8 @@ name:
 description: >-
   This is my personal blog with opinions and views on what I read/watch/explore.
   This does not convey or represent views of my employer(s)
-url: 'null'
-baseurl: null
+url: 'https://sahyagiri.github.io'
+baseurl: '/sahyagiri'
 repository: 'sahyagiri/sahyagiri'
 teaser: 'null'
 logo: 'null'
