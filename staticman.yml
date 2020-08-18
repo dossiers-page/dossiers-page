@@ -94,4 +94,4 @@ comments:
     siteKey: "6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO"
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
     # For more information, https://staticman.net/docs/encryption
-    secret: "hBjVWYtewIkiB7AAxOIfoFDBnH6SBRHJ1dXXIHtrPYoL7rIJfFVZ73pnSdrFu49ELv5RcJS/1v2DCLxC3oMu2l4qj+wpapwxfcQcWt4eEkpC4XfivLvRc5I/gonZL6dDFk5Cbr+mMzYcNuw/rObDc4sbbDAFRfmzLt7yXHaMs3E="
+    secret: hBjVWYtewIkiB7AAxOIfoFDBnH6SBRHJ1dXXIHtrPYoL7rIJfFVZ73pnSdrFu49ELv5RcJS/1v2DCLxC3oMu2l4qj+wpapwxfcQcWt4eEkpC4XfivLvRc5I/gonZL6dDFk5Cbr+mMzYcNuw/rObDc4sbbDAFRfmzLt7yXHaMs3E=
