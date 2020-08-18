@@ -24,8 +24,8 @@ comments:
     branch    : "master"
     endpoint  : https://dev.staticman.net/v3/entry/github/
 reCaptcha:
-  siteKey: "6LdvRcAZAAAAAOrdwCWHt5Ru061-TZo7FBenEmI2"
-  secret: "WWhD77l5CBzs9Qc4T96wh4aV5bIVt7ORoNX2NFbDp498f0t0VpPqzJOM2q9FnzPeE5YhXxFLNAPgP1SY07M4Dc+LksZcz20fnRIxN8vPpCZj8OE7WsM1AV8xgd3Iqlaq+lzKQxsiVzmaKE0aSRHb/MlAx231LeSCJVMRsA00W7g="
+  siteKey: "6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO"
+  secret: "hBjVWYtewIkiB7AAxOIfoFDBnH6SBRHJ1dXXIHtrPYoL7rIJfFVZ73pnSdrFu49ELv5RcJS/1v2DCLxC3oMu2l4qj+wpapwxfcQcWt4eEkpC4XfivLvRc5I/gonZL6dDFk5Cbr+mMzYcNuw/rObDc4sbbDAFRfmzLt7yXHaMs3E="
 atom_feed:
   path: null
 search: null
