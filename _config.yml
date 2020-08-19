@@ -10,8 +10,8 @@ description: >-
 url: 'https://sahyagiri.github.io'
 baseurl: '/'
 repository: 'sahyagiri/sahyagiri.github.io'
-teaser: 'null'
-logo: 'null'
+teaser: 'assets/teaser.jpg'
+logo: 'assets/icon1.png'
 masthead_title: null
 words_per_minute: 200
 comments:
@@ -28,7 +28,7 @@ reCaptcha:
   secret: hBjVWYtewIkiB7AAxOIfoFDBnH6SBRHJ1dXXIHtrPYoL7rIJfFVZ73pnSdrFu49ELv5RcJS/1v2DCLxC3oMu2l4qj+wpapwxfcQcWt4eEkpC4XfivLvRc5I/gonZL6dDFk5Cbr+mMzYcNuw/rObDc4sbbDAFRfmzLt7yXHaMs3E=
 atom_feed:
   path: null
-search: null
+search: true
 search_full_content: null
 search_provider: null
 algolia:
