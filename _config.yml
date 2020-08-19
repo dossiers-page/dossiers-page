@@ -10,7 +10,7 @@ description: >-
 url: 'https://sahyagiri.github.io'
 baseurl: '/'
 repository: 'sahyagiri/sahyagiri.github.io'
-teaser: 'assets/teaser.jpg'
+teaser: 'assets/teaser1.jpg'
 logo: 'assets/icon1.png'
 masthead_title: null
 words_per_minute: 200
