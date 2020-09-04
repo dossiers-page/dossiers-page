@@ -1,186 +1,97 @@
-minimal_mistakes_skin: sunrise
-locale: en-US
-title: Data Wanderer
-title_separator: '-'
-subtitle: 'Garbage in, garbage out'
-name: 
-description: >-
-  This is my personal blog with opinions and views on what I read/watch/explore.
-  This does not convey or represent views of my employer(s)
-url: 'https://sahyagiri.github.io'
-baseurl: '/'
-repository: 'sahyagiri/sahyagiri.github.io'
-teaser: 'assets/teaser1.jpg'
-logo: 'assets/icon1.png'
-masthead_title: null
-words_per_minute: 200
+# Name of the property. You can have multiple properties with completely
+# different config blocks for different sections of your site.
+# For example, you can have one property to handle comment submission and
+# another one to handle posts.
+# To encrypt strings use the following endpoint:
+# https://api.staticman.net/v2/encrypt/{TEXT TO BE ENCRYPTED}
+
 comments:
- # provider: "utterances"
- # utterances:
- #   theme: "github-light" # "github-dark"
- #   issue_term: "pathname"
-  provider: 'staticman_v3'   
-  staticman:
-    branch    : "master"
-    endpoint  : https://my-blog-comments.herokuapp.com/v3/entry/github/
-reCaptcha:
-  siteKey: "6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO"
-  secret: N8A1NAeiTPGN0vFoQ4jYvMZAkaQm3wnsdSDe++kcgq5H0Ybxa1G9tDACH741zCR+bjI/7Ce6kpDJEMqFG7ydAXSWw1mrAiCG+EVTKDeaCtpqQhvs3LA7vWe/yGRL3foXsFj2FaGfhq6irwFHCJSQFMwogyJ/yUidJCgsZS8JknJgSRHCuU6R0155HMb2cfZauI9M5nLfXB+uBfpG9alJFRu9bmANKMS4vOmGvzp/r5GtVNPfUr1ERKX6YSyi98wjivIB6UM5Jr22AUIKN2tzGN01TFbcSKATslUcP910fieShMRn2d/v8bii9tEW9fTuZbj09TPnrt9vg1W955Q0soIa9/RuQS8vM/xGQ1bzNS0mzSiPUR9Fc8Rj+GdwH0tGlGO+siYweCR6QjMJpbicdAvNlje/dgwK5i+75F+v+MDF/N5vkbbQx+DAlBFMqC/yDAFD1nR5IXtS04rDxLewr6VHQ9pO6owua7cFXovfiqh9lYqWQp959Y9VcSY7kLfSPJ69cDCBkewq44KY2lr/suFP9ltelttCpek18MAyzaMHNq+9SXKbNz5SMKUn/3oBJWj8zEUoxe/6jJP0YVCiKBbrBWxAxMx6419w9TqxdzUDrBMOpRTV+BjRO8pAhPj8VqLiavNI5afq776HKW1FmH/+FSz2lGbpkY71m6C7hN0=
-atom_feed:
-  path: null
-search: true
-search_full_content: null
-search_provider: null
-algolia:
-  application_id: null
-  index_name: null
-  search_only_api_key: null
-  powered_by: null
-google:
-  search_engine_id: null
-  instant_search: null
-google_site_verification: null
-bing_site_verification: null
-yandex_site_verification: null
-naver_site_verification: null
-twitter:
-  username: sahyagiri
-facebook:
-  username: sahyagiri
-  app_id: null
-  publisher: null
-og_image: 'null'
-social:
-  type: 'null'
-  name: null
-  links: null
-analytics:
-  provider: false
-  google:
-    tracking_id: null
-    anonymize_ip: null
-author:
-  name: Gireesan Namboothiri P.
-  avatar: 'assets/giree.jpg'
-  bio: >-
-    reading, programming, cooking, cycling, traveling and star gazing
-  location: Could be anywhere
-  email: sahyagiri@gmail.com
-  links:
-    - label: Email
-      icon: fas fa-fw fa-envelope-square
-    - label: Website
-      icon: fas fa-fw fa-link
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-    - label: Facebook
-      icon: fab fa-fw fa-facebook-square
-    - label: GitHub
-      icon: fab fa-fw fa-github
-    - label: Instagram
-      icon: fab fa-fw fa-instagram
-footer:
-  links:
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-    - label: Facebook
-      icon: fab fa-fw fa-facebook-square
-    - label: GitHub
-      icon: fab fa-fw fa-github
-    - label: GitLab
-      icon: fab fa-fw fa-gitlab
-    - label: Bitbucket
-      icon: fab fa-fw fa-bitbucket
-    - label: Instagram
-      icon: fab fa-fw fa-instagram
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - '*.sublime-project'
-  - '*.sublime-workspace'
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs
-  - /test
-keep_files:
-  - .git
-  - .svn
-encoding: utf-8
-markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: |+
+  # (*) REQUIRED
+  #
+  # Names of the fields the form is allowed to submit. If a field that is
+  # not here is part of the request, an error will be thrown.
+  allowedFields: ["name", "email","message"]
 
+  # (*) REQUIRED WHEN USING NOTIFICATIONS
+  #
+  # When allowedOrigins is defined, only requests sent from one of the domains
+  # listed will be accepted. The origin is sent as part as the `options` object
+  # (e.g. <input name="options[origin]" value="http://yourdomain.com/post1")
+  # allowedOrigins: ["yourdomain.com"]
 
-incremental: false
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: 'lsquo,rsquo,ldquo,rdquo'
-  enable_coderay: false
-sass:
-  sass_dir: _sass
-  style: compressed
-permalink: '/:categories/:title/'
-paginate: 5
-paginate_path: '/page:num/'
-timezone: null
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-defaults:
-  - scope:
-      path: ''
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      comments: true
-      share: true
-      related: true
+  # (*) REQUIRED
+  #
+  # Name of the branch being used. Must match the one sent in the URL of the
+  # request.
+  branch: "master"
+
+  commitMessage: "New comment by {fields.name}"
+
+  # (*) REQUIRED
+  #
+  # Destination path (filename) for the data files. Accepts placeholders.
+  filename: "comment-{@timestamp}"
+
+  # The format of the generated data files. Accepted values are "json", "yaml"
+  # or "frontmatter"
+  format: "yaml"
+
+  # List of fields to be populated automatically by Staticman and included in
+  # the data file. Keys are the name of the field. The value can be an object
+  # with a `type` property, which configures the generated field, or any value
+  # to be used directly (e.g. a string, number or array)
+  generatedFields:
+    date:
+      type: "date"
+      options:
+        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+
+  # Whether entries need to be approved before they are published to the main
+  # branch. If set to `true`, a pull request will be created for your approval.
+  # Otherwise, entries will be published to the main branch automatically.
+  moderation: true
+
+  
+
+  # Name of the site. Used in notification emails.
+  # name: "Your Site"
+
+  # Notification settings. When enabled, users can choose to receive notifications
+  # via email when someone adds a reply or a new comment. This requires an account
+  # with Mailgun, which you can get for free at http://mailgun.com.
+  # notifications:
+    # Enable notifications
+    # enabled: true
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun API key
+    # apiKey: ""
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun domain (encrypted)
+    # domain: ""
+
+  # (*) REQUIRED
+  #
+  # Destination path (directory) for the data files. Accepts placeholders.
+  path: "docs/_data/comments/{options.slug}" # "_data/comments/{options.slug}" (default)
+
+  # Names of required files. If any of these isn't in the request or is empty,
+  # an error will be thrown.
+  requiredFields: ["name", "message"]
+
+  # List of transformations to apply to any of the fields supplied. Keys are
+  # the name of the field and values are possible transformation types.
+  transforms:
+    email: md5
+
+  # reCaptcha
+  # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
+  reCaptcha:
+    enabled: true
+    siteKey: "6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO"
+    # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
+    # For more information, https://staticman.net/docs/encryption
+      secret: N8A1NAeiTPGN0vFoQ4jYvMZAkaQm3wnsdSDe++kcgq5H0Ybxa1G9tDACH741zCR+bjI/7Ce6kpDJEMqFG7ydAXSWw1mrAiCG+EVTKDeaCtpqQhvs3LA7vWe/yGRL3foXsFj2FaGfhq6irwFHCJSQFMwogyJ/yUidJCgsZS8JknJgSRHCuU6R0155HMb2cfZauI9M5nLfXB+uBfpG9alJFRu9bmANKMS4vOmGvzp/r5GtVNPfUr1ERKX6YSyi98wjivIB6UM5Jr22AUIKN2tzGN01TFbcSKATslUcP910fieShMRn2d/v8bii9tEW9fTuZbj09TPnrt9vg1W955Q0soIa9/RuQS8vM/xGQ1bzNS0mzSiPUR9Fc8Rj+GdwH0tGlGO+siYweCR6QjMJpbicdAvNlje/dgwK5i+75F+v+MDF/N5vkbbQx+DAlBFMqC/yDAFD1nR5IXtS04rDxLewr6VHQ9pO6owua7cFXovfiqh9lYqWQp959Y9VcSY7kLfSPJ69cDCBkewq44KY2lr/suFP9ltelttCpek18MAyzaMHNq+9SXKbNz5SMKUn/3oBJWj8zEUoxe/6jJP0YVCiKBbrBWxAxMx6419w9TqxdzUDrBMOpRTV+BjRO8pAhPj8VqLiavNI5afq776HKW1FmH/+FSz2lGbpkY71m6C7hN0=
