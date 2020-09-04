@@ -19,7 +19,7 @@ comments:
  # utterances:
  #   theme: "github-light" # "github-dark"
  #   issue_term: "pathname"
-  provider: 'staticman_v3'   
+  provider: 'staticman_v2'   
   staticman:
     branch    : "master"
     endpoint  : https://my-blog-comments.herokuapp.com/v3/entry/github
