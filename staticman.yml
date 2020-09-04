@@ -1,97 +1,191 @@
-# Name of the property. You can have multiple properties with completely
-# different config blocks for different sections of your site.
-# For example, you can have one property to handle comment submission and
-# another one to handle posts.
-# To encrypt strings use the following endpoint:
-# https://api.staticman.net/v2/encrypt/{TEXT TO BE ENCRYPTED}
-
-comments:
-  # (*) REQUIRED
-  #
-  # Names of the fields the form is allowed to submit. If a field that is
-  # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email","message"]
-
-  # (*) REQUIRED WHEN USING NOTIFICATIONS
-  #
-  # When allowedOrigins is defined, only requests sent from one of the domains
-  # listed will be accepted. The origin is sent as part as the `options` object
-  # (e.g. <input name="options[origin]" value="http://yourdomain.com/post1")
-  # allowedOrigins: ["yourdomain.com"]
-
-  # (*) REQUIRED
-  #
-  # Name of the branch being used. Must match the one sent in the URL of the
-  # request.
-  branch: "master"
-
-  commitMessage: "New comment by {fields.name}"
-
-  # (*) REQUIRED
-  #
-  # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "comment-{@timestamp}"
-
-  # The format of the generated data files. Accepted values are "json", "yaml"
-  # or "frontmatter"
-  format: "yaml"
-
-  # List of fields to be populated automatically by Staticman and included in
-  # the data file. Keys are the name of the field. The value can be an object
-  # with a `type` property, which configures the generated field, or any value
-  # to be used directly (e.g. a string, number or array)
-  generatedFields:
-    date:
-      type: "date"
-      options:
-        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-
-  # Whether entries need to be approved before they are published to the main
-  # branch. If set to `true`, a pull request will be created for your approval.
-  # Otherwise, entries will be published to the main branch automatically.
-  moderation: true
-
-  
-
-  # Name of the site. Used in notification emails.
-  # name: "Your Site"
-
-  # Notification settings. When enabled, users can choose to receive notifications
-  # via email when someone adds a reply or a new comment. This requires an account
-  # with Mailgun, which you can get for free at http://mailgun.com.
-  # notifications:
-    # Enable notifications
-    # enabled: true
-
-    # (!) ENCRYPTED
-    #
-    # Mailgun API key
-    # apiKey: ""
-
-    # (!) ENCRYPTED
-    #
-    # Mailgun domain (encrypted)
-    # domain: ""
-
-  # (*) REQUIRED
-  #
-  # Destination path (directory) for the data files. Accepts placeholders.
-  path: "docs/_data/comments/{options.slug}" # "_data/comments/{options.slug}" (default)
-
-  # Names of required files. If any of these isn't in the request or is empty,
-  # an error will be thrown.
-  requiredFields: ["name", "message"]
-
-  # List of transformations to apply to any of the fields supplied. Keys are
-  # the name of the field and values are possible transformation types.
-  transforms:
-    email: md5
-
-  # reCaptcha
-  # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
-  reCaptcha:
-    enabled: true
-    siteKey: "6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO"
-    # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
-    # For more information, https://staticman.net/docs/encryption
-      secret: N8A1NAeiTPGN0vFoQ4jYvMZAkaQm3wnsdSDe++kcgq5H0Ybxa1G9tDACH741zCR+bjI/7Ce6kpDJEMqFG7ydAXSWw1mrAiCG+EVTKDeaCtpqQhvs3LA7vWe/yGRL3foXsFj2FaGfhq6irwFHCJSQFMwogyJ/yUidJCgsZS8JknJgSRHCuU6R0155HMb2cfZauI9M5nLfXB+uBfpG9alJFRu9bmANKMS4vOmGvzp/r5GtVNPfUr1ERKX6YSyi98wjivIB6UM5Jr22AUIKN2tzGN01TFbcSKATslUcP910fieShMRn2d/v8bii9tEW9fTuZbj09TPnrt9vg1W955Q0soIa9/RuQS8vM/xGQ1bzNS0mzSiPUR9Fc8Rj+GdwH0tGlGO+siYweCR6QjMJpbicdAvNlje/dgwK5i+75F+v+MDF/N5vkbbQx+DAlBFMqC/yDAFD1nR5IXtS04rDxLewr6VHQ9pO6owua7cFXovfiqh9lYqWQp959Y9VcSY7kLfSPJ69cDCBkewq44KY2lr/suFP9ltelttCpek18MAyzaMHNq+9SXKbNz5SMKUn/3oBJWj8zEUoxe/6jJP0YVCiKBbrBWxAxMx6419w9TqxdzUDrBMOpRTV+BjRO8pAhPj8VqLiavNI5afq776HKW1FmH/+FSz2lGbpkY71m6C7hN0=
+--- 
+algolia: 
+  application_id: ~
+  index_name: ~
+  powered_by: ~
+  search_only_api_key: ~
+analytics: 
+  google: 
+    anonymize_ip: ~
+    tracking_id: ~
+  provider: false
+atom_feed: 
+  path: ~
+author: 
+  avatar: assets/giree.jpg
+  bio: "reading, programming, cooking, cycling, traveling and star gazing"
+  email: sahyagiri@gmail.com
+  links: 
+    - 
+      icon: "fas fa-fw fa-envelope-square"
+      label: Email
+    - 
+      icon: "fas fa-fw fa-link"
+      label: Website
+    - 
+      icon: "fab fa-fw fa-twitter-square"
+      label: Twitter
+    - 
+      icon: "fab fa-fw fa-facebook-square"
+      label: Facebook
+    - 
+      icon: "fab fa-fw fa-github"
+      label: GitHub
+    - 
+      icon: "fab fa-fw fa-instagram"
+      label: Instagram
+  location: "Could be anywhere"
+  name: "Gireesan Namboothiri P."
+baseurl: /
+bing_site_verification: ~
+category_archive: 
+  path: /categories/
+  type: liquid
+comments: 
+  provider: staticman_v2
+  staticman: 
+    branch: master
+    endpoint: "https://my-blog-comments.herokuapp.com/v2/entry/"
+compress_html: 
+  clippings: all
+  ignore: 
+    envs: development
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: posts
+    values: 
+      author_profile: false
+      comments: true
+      layout: single
+      read_time: true
+      related: true
+      share: true
+description: "This is my personal blog with opinions and views on what I read/watch/explore. This does not convey or represent views of my employer(s)"
+encoding: utf-8
+excerpt_separator: "\n\n"
+exclude: 
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+facebook: 
+  app_id: ~
+  publisher: ~
+  username: sahyagiri
+footer: 
+  links: 
+    - 
+      icon: "fab fa-fw fa-twitter-square"
+      label: Twitter
+    - 
+      icon: "fab fa-fw fa-facebook-square"
+      label: Facebook
+    - 
+      icon: "fab fa-fw fa-github"
+      label: GitHub
+    - 
+      icon: "fab fa-fw fa-gitlab"
+      label: GitLab
+    - 
+      icon: "fab fa-fw fa-bitbucket"
+      label: Bitbucket
+    - 
+      icon: "fab fa-fw fa-instagram"
+      label: Instagram
+google: 
+  instant_search: ~
+  search_engine_id: ~
+google_site_verification: ~
+highlighter: rouge
+include: 
+  - .htaccess
+  - _pages
+incremental: false
+keep_files: 
+  - .git
+  - .svn
+kramdown: 
+  auto_ids: true
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  hard_wrap: false
+  input: GFM
+  smart_quotes: "lsquo,rsquo,ldquo,rdquo"
+  toc_levels: "1..6"
+locale: en-US
+logo: assets/icon1.png
+lsi: false
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+masthead_title: ~
+minimal_mistakes_skin: sunrise
+name: ~
+naver_site_verification: ~
+og_image: "null"
+paginate: 5
+paginate_path: "/page:num/"
+permalink: "/:categories/:title/"
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+reCaptcha: 
+  secret: N8A1NAeiTPGN0vFoQ4jYvMZAkaQm3wnsdSDe++kcgq5H0Ybxa1G9tDACH741zCR+bjI/7Ce6kpDJEMqFG7ydAXSWw1mrAiCG+EVTKDeaCtpqQhvs3LA7vWe/yGRL3foXsFj2FaGfhq6irwFHCJSQFMwogyJ/yUidJCgsZS8JknJgSRHCuU6R0155HMb2cfZauI9M5nLfXB+uBfpG9alJFRu9bmANKMS4vOmGvzp/r5GtVNPfUr1ERKX6YSyi98wjivIB6UM5Jr22AUIKN2tzGN01TFbcSKATslUcP910fieShMRn2d/v8bii9tEW9fTuZbj09TPnrt9vg1W955Q0soIa9/RuQS8vM/xGQ1bzNS0mzSiPUR9Fc8Rj+GdwH0tGlGO+siYweCR6QjMJpbicdAvNlje/dgwK5i+75F+v+MDF/N5vkbbQx+DAlBFMqC/yDAFD1nR5IXtS04rDxLewr6VHQ9pO6owua7cFXovfiqh9lYqWQp959Y9VcSY7kLfSPJ69cDCBkewq44KY2lr/suFP9ltelttCpek18MAyzaMHNq+9SXKbNz5SMKUn/3oBJWj8zEUoxe/6jJP0YVCiKBbrBWxAxMx6419w9TqxdzUDrBMOpRTV+BjRO8pAhPj8VqLiavNI5afq776HKW1FmH/+FSz2lGbpkY71m6C7hN0=
+  siteKey: 6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO
+repository: sahyagiri/sahyagiri.github.io
+sass: 
+  sass_dir: _sass
+  style: compressed
+search: true
+search_full_content: ~
+search_provider: ~
+social: 
+  links: ~
+  name: ~
+  type: "null"
+subtitle: "Garbage in, garbage out"
+tag_archive: 
+  path: /tags/
+  type: liquid
+teaser: assets/teaser1.jpg
+timezone: ~
+title: "Data Wanderer"
+title_separator: "-"
+twitter: 
+  username: sahyagiri
+url: "https://sahyagiri.github.io"
+whitelist: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+words_per_minute: 200
+yandex_site_verification: ~
