@@ -1,6 +1,8 @@
 ---
 title: This is a post with a tag
-categories: []
+tags:
+- tag1
+- tag2
 ---
 
 Tagging test
