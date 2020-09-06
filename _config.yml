@@ -5,9 +5,9 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Gireesan Namboothiri"
 description              : "Stories with a data twist"
-url                      : "https://sahyagiri.github.io"
+url                      : "https://dossiers.page"
 baseurl                  : "/"
-repository               : "sahyagiri/sahyagiri.github.io"
+repository               : "dossiers-page/dossiers-page/"
 teaser                   : #"/assets/images/teaser.jpeg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -73,7 +73,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:giri@dossiers.page"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
