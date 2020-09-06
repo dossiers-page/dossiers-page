@@ -22,7 +22,7 @@ If you are curious, have a look at
 ![surely you are joking: book link](https://images-na.ssl-images-amazon.com/images/I/81F7f5hAXVL.jpg)
 
 If you are too lazy to read the book, you could try the movie "Challenger Disaster" 
-{% youtube "https://www.youtube.com/watch?v=bvv2-7iOD_8"%}
+{% include video id="bvv2-7iOD_8" provider="youtube" %}
 
 He is one teacher I did not meet, but inspired and changed a lot in me
 Happy teacher's day
