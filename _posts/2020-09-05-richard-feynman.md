@@ -20,6 +20,9 @@ If you have not heard of him, he is
 My love for Dr Richard Feynman started with my life at IIT-Madras. If you ever wonder, I knew him and you did not; don't worry. I did not. And, to this date; I feel it is a shame not to know him earlier enough. Everything about Feynman started with the book "**Surely You're Joking, Mr. Feynman**!" When I started reading the book, I was intrigued by the way he was telling how he played with Physics, been part of atomic project, ran experiments, played around with one of the first kind of parallel processing algorithms, cracking safe, playing Bongos and even to go to great extends on simplicity in proving questions in Physics.
 If you are curious, have a look at
 ![surely you are joking: book link](https://images-na.ssl-images-amazon.com/images/I/81F7f5hAXVL.jpg)
-or watch the movie "Challenger Disaster"
-definitely a great teacher for me and many others.
+
+If you are too lazy to read the book, you could try the movie "Challenger Disaster" 
+{% youtube "https://www.youtube.com/watch?v=bvv2-7iOD_8"%}
+
+He is one teacher I did not meet, but inspired and changed a lot in me
 Happy teacher's day
