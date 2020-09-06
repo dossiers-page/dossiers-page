@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/richard-feynman/</loc>
+<loc>https://sahyagiri.github.io/richard-feynman/</loc>
 <lastmod>2020-09-05T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/about/</loc>
+<loc>https://sahyagiri.github.io/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://sahyagiri.github.io/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/movies/</loc>
+<loc>https://sahyagiri.github.io/tags/movies/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/biopic/</loc>
+<loc>https://sahyagiri.github.io/tags/biopic/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/books/</loc>
+<loc>https://sahyagiri.github.io/tags/books/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/inspiration/</loc>
+<loc>https://sahyagiri.github.io/tags/inspiration/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/physics/</loc>
+<loc>https://sahyagiri.github.io/tags/physics/</loc>
 </url>
 </urlset>
