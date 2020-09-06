@@ -7,7 +7,7 @@ name                     : "Gireesan Namboothiri"
 description              : "Stories with a data twist"
 url                      : "https://dossiers.page"
 baseurl                  : "/"
-repository               : "dossiers-page/dossiers-page/"
+repository               : "dossiers-page/dossiers-page"
 teaser                   : #"/assets/images/teaser.jpeg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
