@@ -83,7 +83,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "docs/_data/comments/{options.slug}" # "_data/comments/{options.slug}" (default)
+  path: "_data/results/{@timestamp}"
 
   # Names of required files. If any of these isn't in the request or is empty,
   # an error will be thrown.
@@ -101,4 +101,4 @@ comments:
     siteKey: "6LcURsAZAAAAALDlYf3unFONOwwe4hzS97mZSTcO"
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
     # For more information, https://staticman.net/docs/encryption
-    secret: "N8A1NAeiTPGN0vFoQ4jYvMZAkaQm3wnsdSDe++kcgq5H0Ybxa1G9tDACH741zCR+bjI/7Ce6kpDJEMqFG7ydAXSWw1mrAiCG+EVTKDeaCtpqQhvs3LA7vWe/yGRL3foXsFj2FaGfhq6irwFHCJSQFMwogyJ/yUidJCgsZS8JknJgSRHCuU6R0155HMb2cfZauI9M5nLfXB+uBfpG9alJFRu9bmANKMS4vOmGvzp/r5GtVNPfUr1ERKX6YSyi98wjivIB6UM5Jr22AUIKN2tzGN01TFbcSKATslUcP910fieShMRn2d/v8bii9tEW9fTuZbj09TPnrt9vg1W955Q0soIa9/RuQS8vM/xGQ1bzNS0mzSiPUR9Fc8Rj+GdwH0tGlGO+siYweCR6QjMJpbicdAvNlje/dgwK5i+75F+v+MDF/N5vkbbQx+DAlBFMqC/yDAFD1nR5IXtS04rDxLewr6VHQ9pO6owua7cFXovfiqh9lYqWQp959Y9VcSY7kLfSPJ69cDCBkewq44KY2lr/suFP9ltelttCpek18MAyzaMHNq+9SXKbNz5SMKUn/3oBJWj8zEUoxe/6jJP0YVCiKBbrBWxAxMx6419w9TqxdzUDrBMOpRTV+BjRO8pAhPj8VqLiavNI5afq776HKW1FmH/+FSz2lGbpkY71m6C7hN0="
+    secret:  "N8A1NAeiTPGN0vFoQ4jYvMZAkaQm3wnsdSDe++kcgq5H0Ybxa1G9tDACH741zCR+bjI/7Ce6kpDJEMqFG7ydAXSWw1mrAiCG+EVTKDeaCtpqQhvs3LA7vWe/yGRL3foXsFj2FaGfhq6irwFHCJSQFMwogyJ/yUidJCgsZS8JknJgSRHCuU6R0155HMb2cfZauI9M5nLfXB+uBfpG9alJFRu9bmANKMS4vOmGvzp/r5GtVNPfUr1ERKX6YSyi98wjivIB6UM5Jr22AUIKN2tzGN01TFbcSKATslUcP910fieShMRn2d/v8bii9tEW9fTuZbj09TPnrt9vg1W955Q0soIa9/RuQS8vM/xGQ1bzNS0mzSiPUR9Fc8Rj+GdwH0tGlGO+siYweCR6QjMJpbicdAvNlje/dgwK5i+75F+v+MDF/N5vkbbQx+DAlBFMqC/yDAFD1nR5IXtS04rDxLewr6VHQ9pO6owua7cFXovfiqh9lYqWQp959Y9VcSY7kLfSPJ69cDCBkewq44KY2lr/suFP9ltelttCpek18MAyzaMHNq+9SXKbNz5SMKUn/3oBJWj8zEUoxe/6jJP0YVCiKBbrBWxAxMx6419w9TqxdzUDrBMOpRTV+BjRO8pAhPj8VqLiavNI5afq776HKW1FmH/+FSz2lGbpkY71m6C7hN0="
