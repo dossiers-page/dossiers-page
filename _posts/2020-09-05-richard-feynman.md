@@ -31,5 +31,5 @@ Two other books to read if you started liking Feynman, are
 [ What do you care what other people think?](https://www.amazon.in/What-Care-Other-People-Think-ebook/dp/B002RI9YHS/) 
 ![Book cover](https://images-na.ssl-images-amazon.com/images/I/91pFh3Sf2AL.jpg)
 
-He is one teacher I did not meet, but inspired and changed a lot in me
+He is one teacher I did not meet, but inspired and changed a lot in me. 
 Happy teacher's day
