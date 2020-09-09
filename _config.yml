@@ -42,7 +42,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : sahyagiri
 facebook:
   username               :
   app_id                 :
@@ -55,6 +55,11 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://www.linkedin.com/in/sahyagiri"
+    - "https://twitter.com/sahyagiri"
+    - "https://www.facebook.com/sahyagiri"
+    - "https://instagram.com/sahyagiri"
+    - "https://www.linkedin.com/in/sahyagiri"
+
 
 # Analytics
 analytics:
