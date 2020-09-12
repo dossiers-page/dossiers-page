@@ -26,7 +26,7 @@ Out of these parameters, what we can control are only the following
 2. Cholesterol
 3. Maximum heart rate achieved
 
-In exploratory model analysis, we can take the complete dataset, train the model and check how each of these features determine the heart risk.  Following plot is created after training the model and interpretation of features using SHAP values. Factors on top are more important. Values on right favors heart disease. Values towards blue are lower for a given feature.  
+In exploratory model analysis, we can take the complete dataset, train the model and check how each of these features determine the heart risk.  Following plot is created after training the model and interpretation of features using [SHAP values](https://github.com/slundberg/shap). Factors on top are more important. Values on right favors heart disease. Values towards blue are lower for a given feature.  
 ![Shap Values of factors associated to heart disease ](/assets/images/shap_values_heart_data.jpg)
 
 Since fasting blood surar is a boolean value, it is always better to be on lower side. No further check needed. 
