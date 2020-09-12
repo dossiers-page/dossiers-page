@@ -13,8 +13,8 @@ Age going above 35 is when some of us starts thinking about fitness (and obesity
 * How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?
 * How much sugar and tempting high calorie food I can have, if I run/not run
 * What exactly a fitness band would help me? Just measuring heart beat? Sleep?  
-
-Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great.  
+ 
+Then I came across [this course in coursera ](https://www.coursera.org/learn/hacking-exercise-health/home/welcome)which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great.  
 ![Hacking Exercise for Health](/assets/images/hacking_exercise_health_course.jpg). 
 
 While there are studies already available from those professors, we can try something available in the open from [Kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final). 
