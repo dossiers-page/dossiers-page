@@ -10,4 +10,10 @@ var store = [{
         "tags": ["inspiration","EMA","exploratory_model_analysis","machine_learning"],
         "url": "http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/",
         "teaser": null
+      },{
+        "title": "Exploratory Model Analysis on Heart Disease Data",
+        "excerpt":"Behind the scenes of the “max heart rate achieved” is good for heart. This is for people who love programming. Unlike the traditional style where we do EDA, we start with model building as shown below . The sceptisism from traditional style programmers in ML is that the ensemble or...","categories": [],
+        "tags": ["EMA","exploratory_model_analysis","machine_learning","EDA"],
+        "url": "http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/",
+        "teaser": null
       }]
