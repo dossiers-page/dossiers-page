@@ -1,0 +1,666 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to reduce heart disease risk? An exploratory Model Analysis on open data set - Dossiers</title>
+<meta name="description" content="Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are    How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?   How much sugar and tempting high calorie food I can have, if I run/not run   What exactly a fitness band would help me? Just measuring heart beat? Sleep?   Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great. .">
+
+
+  <meta name="author" content="Gireesan Namboothiri">
+  
+  <meta property="article:author" content="Gireesan Namboothiri">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Dossiers">
+<meta property="og:title" content="How to reduce heart disease risk? An exploratory Model Analysis on open data set">
+<meta property="og:url" content="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/">
+
+
+  <meta property="og:description" content="Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are    How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?   How much sugar and tempting high calorie food I can have, if I run/not run   What exactly a fitness band would help me? Just measuring heart beat? Sleep?   Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great. .">
+
+
+
+
+
+  <meta name="twitter:site" content="@sahyagiri">
+  <meta name="twitter:title" content="How to reduce heart disease risk? An exploratory Model Analysis on open data set">
+  <meta name="twitter:description" content="Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are    How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?   How much sugar and tempting high calorie food I can have, if I run/not run   What exactly a fitness band would help me? Just measuring heart beat? Sleep?   Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great. .">
+  <meta name="twitter:url" content="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2020-09-12T00:00:00+05:30">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Gireesan Namboothiri",
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://www.linkedin.com/in/sahyagiri","https://twitter.com/sahyagiri","https://www.facebook.com/sahyagiri","https://instagram.com/sahyagiri","https://www.linkedin.com/in/sahyagiri"]
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Dossiers Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Dossiers
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Gireesan Namboothiri</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Random thoughts scribed here.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere else</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:giri@dossiers.page" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://instagram.com/sahyagiri" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/sahyagiri" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-square" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to reduce heart disease risk? An exploratory Model Analysis on open data set">
+    <meta itemprop="description" content="Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are  How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?  How much sugar and tempting high calorie food I can have, if I run/not run  What exactly a fitness band would help me? Just measuring heart beat? Sleep?Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great..">
+    <meta itemprop="datePublished" content="2020-09-12T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">How to reduce heart disease risk? An exploratory Model Analysis on open data set
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are</p>
+<ul>
+  <li>How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?</li>
+  <li>How much sugar and tempting high calorie food I can have, if I run/not run</li>
+  <li>What exactly a fitness band would help me? Just measuring heart beat? Sleep?</li>
+</ul>
+
+<p>Then I came across <a href="https://www.coursera.org/learn/hacking-exercise-health/home/welcome">this course in coursera </a>which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great.<br />
+<img src="/assets/images/hacking_exercise_health_course.jpg" alt="Hacking Exercise for Health" />.</p>
+
+<p>While there are studies already available from those professors, we can try something available in the open from <a href="https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final">Kaggle</a>.</p>
+
+<p><img src="/assets/images/heart_disease_table.jpg" alt="Heart Disease Table" />
+Out of these parameters, what we can control are only the following</p>
+
+<ol>
+  <li>Fasting blood sugar</li>
+  <li>Cholesterol</li>
+  <li>Maximum heart rate achieved</li>
+</ol>
+
+<p>In exploratory model analysis, we can take the complete dataset, train the model and check how each of these features determine the heart risk.  Following plot is created after training the model and interpretation of features using <a href="https://github.com/slundberg/shap">SHAP values</a>. Factors on top are more important. Values on right favors heart disease. Values towards blue are lower for a given feature.<br />
+<img src="/assets/images/shap_values_heart_data.jpg" alt="Shap Values of factors associated to heart disease " /></p>
+
+<p>Since fasting blood surar is a boolean value, it is always better to be on lower side. No further check needed.</p>
+
+<p>A partial dependance plot (PDPPlot) shows the effect of cholesterol 
+<img src="/assets/images/partial_dependance_plot_for_cholesterol.jpg" alt="Partial dependance plot for cholesterol" />
+If we look at the shap plot and pdp, we see that the unit effect to heart disease is 0.05-0.15.</p>
+
+<p>The most influencing factor in shap plot is the maximum heart rate achieved. 
+<img src="/assets/images/partial_dependance_plot_for_max_heart_rate.jpg" alt="Partial Dependance Plot for maximum heart rate achieved" /></p>
+
+<p>We could lower the risk from 0.2 to 0.4 just by making sure that our heart rate can reach above 120. This shows that investing in a good fitness watch and doing a HIIT (high intensity interval training),  where we aim to achieve the maximum heart rate in lowest possible time.</p>
+<h2 id="is-there-an-effect-or-shift-of-heart-rate-based-on-gender">Is there an effect or shift of heart rate based on Gender?</h2>
+<p><img src="/assets/images/heart_rate_female.jpg" alt="Heart rate for female" />
+<img src="/assets/images/heart_rate_male.jpg" alt="Heart rate for male" /></p>
+
+<p>![Heart rate for male] (assets/images/heart_rate_male.jpg)</p>
+
+<p>PS: This is only for an academic interest on interpretting what data shows. I am neither  qualified medical practitioner nor an expert on exercises. A separate post with details on the model building (including the code) is <a href="https://dossiers.page/exploratory-model-analysis-on-heart-disease-data/">available here</a></p>
+
+<p><strong>Acknowledgements</strong></p>
+
+<p>The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3</p>
+
+<p>The data set is consolidated and <a href="https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final">made available in kaggle</a></p>
+
+<p>Thanks to <a href="https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification">this wonderful post in Kaggle</a> whch I have used in data cleanup</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/ema" class="page__taxonomy-item" rel="tag">EMA</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/exploratory-model-analysis" class="page__taxonomy-item" rel="tag">exploratory_model_analysis</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/inspiration" class="page__taxonomy-item" rel="tag">inspiration</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/machine-learning" class="page__taxonomy-item" rel="tag">machine_learning</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-09-12T00:00:00+05:30">September 12, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=sahyagiri&text=How+to+reduce+heart+disease+risk%3F+An+exploratory+Model+Analysis+on+open+data+set%20http%3A%2F%2Flocalhost%3A4000%2Fhow-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fhow-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fhow-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/richard-feynman/" class="pagination--pager" title="Richard Feynman
+">Previous</a>
+    
+    
+      <a href="/exploratory-model-analysis-on-heart-disease-data/" class="pagination--pager" title="Exploratory Model Analysis on Heart Disease Data
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/exploratory-model-analysis-on-heart-disease-data/" rel="permalink">Exploratory Model Analysis on Heart Disease Data
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Behind the scenes of the “max heart rate achieved” is good for heart.  This is for people who love programming. 
+Unlike the traditional style where we do EDA...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/richard-feynman/" rel="permalink">Richard Feynman
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">If you have not heard of him, he is
+
+  A drummer who can play Bongos  
+  An artist  
+  Someone who could listen to the lowest level of “rocket science” and t...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/sahyagiri/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Gireesan Namboothiri. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    (function ($) {
+    $('#new_comment').submit(function () {
+      var form = this;
+
+      $(form).addClass('disabled');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> Loading...');
+
+      $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        contentType: 'application/x-www-form-urlencoded',
+        success: function (data) {
+          $('#comment-form-submit').html('Submitted');
+          $('.page__comments-form .js-notice').removeClass('notice--danger');
+          $('.page__comments-form .js-notice').addClass('notice--success');
+          showAlert('Thanks for your comment! It will show on the site once it has been approved.');
+        },
+        error: function (err) {
+          console.log(err);
+          $('#comment-form-submit').html('Submit comment');
+          $('.page__comments-form .js-notice').removeClass('notice--success');
+          $('.page__comments-form .js-notice').addClass('notice--danger');
+          showAlert('Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.');
+          $(form).removeClass('disabled');
+        }
+      });
+
+      return false;
+    });
+
+    function showAlert(message) {
+      $('.page__comments-form .js-notice').removeClass('hidden');
+      $('.page__comments-form .js-notice-text').html(message);
+    }
+  })(jQuery);
+  </script>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
