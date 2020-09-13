@@ -44,7 +44,6 @@ We could lower the risk from 0.2 to 0.4 just by making sure that our heart rate 
 ![Heart rate for male](/assets/images/heart_rate_male.jpg)
 
 
-![Heart rate for male] (assets/images/heart_rate_male.jpg)
 
 PS: This is only for an academic interest on interpretting what data shows. I am neither  qualified medical practitioner nor an expert on exercises. A separate post with details on the model building (including the code) is [available here](https://dossiers.page/exploratory-model-analysis-on-heart-disease-data/)
 
