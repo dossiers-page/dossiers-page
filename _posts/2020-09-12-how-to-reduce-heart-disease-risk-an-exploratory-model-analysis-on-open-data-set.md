@@ -39,8 +39,12 @@ The most influencing factor in shap plot is the maximum heart rate achieved.
 ![Partial Dependance Plot for maximum heart rate achieved](/assets/images/partial_dependance_plot_for_max_heart_rate.jpg)
 
 We could lower the risk from 0.2 to 0.4 just by making sure that our heart rate can reach above 120. This shows that investing in a good fitness watch and doing a HIIT (high intensity interval training),  where we aim to achieve the maximum heart rate in lowest possible time. 
+## Is there an effect or shift of heart rate based on Gender? 
+![Heart rate for female](assets/images/heart_rate_female.jpg)
 
-PS: This is only for an academic interest on interpretting what data shows. I am neither  qualified medical practitioner nor an expert on exercises.  I will do a separate post with details on the model building (including the code).
+![Heart rate for male](assets/images/heart_rate_male.jpg)
+
+PS: This is only for an academic interest on interpretting what data shows. I am neither  qualified medical practitioner nor an expert on exercises. A separate post with details on the model building (including the code) is [available here](https://dossiers.page/exploratory-model-analysis-on-heart-disease-data/)
 
 **Acknowledgements**
 
