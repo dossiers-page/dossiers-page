@@ -137,3 +137,12 @@ for numerical_column in numerical_columns:
 ```
 ![Heart disease partial dependance plot features 1](/assets/images/continuous_features_plot1.jpg)
 ![Heart disease partial dependance plot features 2](/assets/images/continuous_features_plot2.jpg)
+
+**Acknowledgements**
+
+The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3
+
+The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
+
+Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup
