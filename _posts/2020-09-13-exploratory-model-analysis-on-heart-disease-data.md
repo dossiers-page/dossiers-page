@@ -5,6 +5,8 @@ tags:
 - exploratory_model_analysis
 - machine_learning
 - EDA
+- xai
+- explainable_ai
 related: true
 ---
 
