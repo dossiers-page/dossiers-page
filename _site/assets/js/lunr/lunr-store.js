@@ -16,4 +16,10 @@ var store = [{
         "tags": ["EMA","exploratory_model_analysis","machine_learning","EDA","xai","explainable_ai"],
         "url": "http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/",
         "teaser": null
+      },{
+        "title": "Explainable AI: Interpreting black box models in python, Part1",
+        "excerpt":"Preface One of the main questions I hear about AI is about the interpretability. The question typically arises when the algorithms are ensemble (RandomForest, XGBoost, LightGBM) or a deep learning model. If FAQ was there about ML model design, this would come at the top. There are multiple reasons to...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/explainable-ai-interpreting-black-box-models-in-python-part1/",
+        "teaser": null
       }]
