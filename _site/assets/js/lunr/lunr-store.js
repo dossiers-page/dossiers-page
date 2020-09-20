@@ -17,9 +17,9 @@ var store = [{
         "url": "http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/",
         "teaser": null
       },{
-        "title": "Explainable AI: Interpreting black box models in python, Part1",
-        "excerpt":"Preface One of the main questions I hear about AI is about the interpretability. The question typically arises when the algorithms are ensemble (RandomForest, XGBoost, LightGBM) or a deep learning model. If FAQ was there about ML model design, this would come at the top. There are multiple reasons to...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/explainable-ai-interpreting-black-box-models-in-python-part1/",
+        "title": "Are we progressing as human?",
+        "excerpt":"When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world? picture courtsy: gapminder.org If we look at the data, we might...","categories": [],
+        "tags": ["books"],
+        "url": "http://localhost:4000/are-we-progressing-as-human/",
         "teaser": null
       }]
