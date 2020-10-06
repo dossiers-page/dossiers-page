@@ -353,6 +353,8 @@ This is why it is always important to give interactive widgets to the subject ma
 The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.
 
 
+### Disclaimer: 
+This is a demonstration of how machine learning models can be trained on available patient data and the study of how the model works in new data. Please do consult a doctor for actual interpretations and risk factors. 
 
 **Acknowledgements**
 
