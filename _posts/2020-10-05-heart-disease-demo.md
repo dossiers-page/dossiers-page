@@ -12,32 +12,26 @@ tags:
 - explainable_ai
 ---
 
-The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning.  A better tool for a subject matter expert to try out is on the boundary conditions.  Here, he/she can put values which even confuses the experts; and see how well the model behaves. 
-This is called **local interpretability**
-Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.  
+The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called **local interpretability**.  This post is an example of local interpretability and how the model behaves well and erratically, given the input conditions. 
 
-The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score.
-
+The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score. 
 ## A note on the parameters used in the demo
-1. Age: Age completed in years
-2.  Resting blood pressure : Level of blood pressure at resting mode in mm/HG (Systoloc)
-3.  Cholestrol: Serum cholestrol in mg/dl 
-4.  Maximum Heart Rate Achieved: Heart rate achieved while doing a threadmill test or exercise
-5.  ST_Depression/oldpeak: Exercise induced ST-depression in comparison with the state of rest 
-6. Sex: Gender of patient (The data had only male and female) 
-7.  Chest Pain Type: Type of chest pain experienced by patient
-8.  Fasting blood sugar: Blood sugar levels on fasting > 120 mg/dl represents as 1 in case of true and 0 as false
-9. Resting ecg: Result of electrocardiogram while at rest
-10. Exercise angina: Angina induced by exercise 0 depicting NO 1 depicting Yes
-11.  ST slope: ST segment measured in terms of slope during peak exercise
+* Age: Age completed in years
+* Resting blood pressure : Level of blood pressure at resting mode in mm/HG (Systoloc)
+* Cholesterol: Serum cholesterol in mg/dl
+* Maximum Heart Rate Achieved: Heart rate achieved while doing a treadmill test or exercise
+* ST_Depression/oldpeak: Exercise induced ST-depression in comparison with the state of rest
+* Sex: Gender of patient (The data had only male and female)
+* Chest Pain Type: Type of chest pain experienced by patient
+* Fasting blood sugar: Blood sugar levels on fasting > 120 mg/dl represents as 1 in case of true and 0 as false
+* Resting ecg: Result of electrocardiogram while at rest
+* Exercise angina: Angina induced by exercise 0 depicting NO 1 depicting Yes
+* ST slope: ST segment measured in terms of slope during peak exercise
 ##  Try it out
 (If you are loading this for first time, click on show widgets below, to load the application. Best viewed in bigger screen) 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
-      
-
-
-
+			
   <div class="cell text_cell">
     <button class="js-nbinteract-widget">
       Loading widgets...
@@ -332,7 +326,8 @@ The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wi
 
 Please note: This is running in free servers and you may need to wait for it to load correctly.
 
-## Below image shows how the interactoin (below) is supposed to render 
+## Below image shows how the interaction (below) is supposed to render
+
 ![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
 
 The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health. 
@@ -363,4 +358,4 @@ https://www.nature.com/articles/s41597-019-0206-3
 
 The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
 
-Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup
+Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) which I have used in data clean up

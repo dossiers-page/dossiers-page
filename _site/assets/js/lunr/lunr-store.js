@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Heart Disease Demo: How much risk for a single patient has",
-        "excerpt":"The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well...","categories": [],
+        "excerpt":"The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well...","categories": [],
         "tags": ["EMA","exploratory_model_analysis","xai","explainable_ai"],
         "url": "http://localhost:4000/heart-disease-demo/",
         "teaser": null
