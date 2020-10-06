@@ -17,7 +17,20 @@ This is called **local interpretability**
 Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.  
 
 The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score.
-#  Try it out
+
+## A note on the parameters used in the demo
+1. Age: Patients Age in years
+2.  Resting blood pressure : Level of blood pressure at resting mode in mm/HG (Systoloc)
+3.  Cholestrol: Serum cholestrol in mg/dl 
+4.  Maximum Heart Rate Achieved: Heart rate achieved while doing a threadmill test or exercise
+5.  ST_Depression/oldpeak: Exercise induced ST-depression in comparison with the state of rest 
+6. Sex: Gender of patient (The data had only male and female) 
+7.  Chest Pain Type: Type of chest pain experienced by patient
+8.  Fasting blood sugar: Blood sugar levels on fasting > 120 mg/dl represents as 1 in case of true and 0 as false
+9. Resting ecg: Result of electrocardiogram while at rest
+10. Exercise angina: Angina induced by exercise 0 depicting NO 1 depicting Yes
+11.  ST slope: ST segment measured in terms of slope during peak exercise
+##  Try it out
 (If you are loading this for first time, click on show widgets below, to load the application. Best viewed in bigger screen) 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
