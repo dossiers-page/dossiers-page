@@ -17,7 +17,6 @@ This is called **local interpretability**
 Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.  
 
 #  Try it out
-#### Please note: This is running in free servers and you may need to wait for it to load correctly.
 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
@@ -307,6 +306,8 @@ Here is an example of local interpretablity and how the model behaves well and e
 </script>
     </div>
   </div>
+	#### Please note: This is running in free servers and you may need to wait for it to load correctly.
+
 ## Below image shows how the interactoin (below) is supposed to render 
 ![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
 
