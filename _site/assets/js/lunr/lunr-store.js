@@ -22,4 +22,10 @@ var store = [{
         "tags": ["books"],
         "url": "http://localhost:4000/are-we-progressing-as-human/",
         "teaser": null
+      },{
+        "title": "Heart Disease Demo",
+        "excerpt":"Loading widgets... #HIDDEN import pandas import shap import joblib import ipywidgets as widgets %matplotlib inline import matplotlib.pyplot as plt import numpy as np import matplotlib.patches as mpatches from sklearn.base import TransformerMixin, BaseEstimator from pandas import Categorical, get_dummies import time from ipywidgets import interact, interact_manual,interactive from ipywidgets import Layout, Button, Box,...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/heart-disease-demo/",
+        "teaser": null
       }]

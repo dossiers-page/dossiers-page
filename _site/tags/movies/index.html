@@ -82,7 +82,8 @@
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="/assets/gdpr/style.css" />
+<script src="/assets/gdpr/browser/bundle.js"></script>
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
@@ -241,7 +242,100 @@
     <div id="footer" class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
+<div id="banner"></div>
+    <script>
+	// Set to the same value as the web property used on the site
+		var gaProperty = 'UA-123456-1';
 
+		// Disable tracking if the opt-out cookie exists.
+		var disableStr = 'ga-disable-' + gaProperty;
+		if (document.cookie.indexOf(disableStr + '=true') > -1) {
+		  window[disableStr] = true;
+		}
+
+		// Opt-out function
+		function gaOptOut() {
+		  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+		  window[disableStr] = true;
+		  console.log('disabled google analytics')
+		}
+		// Opt-out function
+		function gaOptIn() {
+		  document.cookie = disableStr + '=false; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+		  window[disableStr] = false;
+		  console.log('enabled google analytics')
+		}
+	
+	
+	  function googleAnalytics(){
+		  console.log('initialized analytics') 
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-177574000-1']);
+		  
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		}
+      const options = {
+ 
+			  cookieName: 'beyonk_gdpr',
+
+			  cookieConfig: {
+				domain: 'dossiers.page',
+				path: '/'
+			  },
+
+			  heading: 'A note on cookies',
+			  description: 'We use cookies to offer a better browsing experience, analyze site traffic, personalize content, and serve targeted advertisements. Please review our <a href="/privacy-policy">privacy policy page</a>. By clicking accept, you consent to our privacy policy & use of cookies.',
+			  acceptLabel: 'Confirm all',
+			  settingsLabel: 'Preferences',
+			  closeLabel: 'Close window',
+
+			  choices: {
+				necessary: {
+				  label: 'Required cookies',
+				  description:
+					"These can't be turned off as they are used to control all the other cookies",
+				  value: true
+				},
+				analytics: {
+				  label: 'Google Analytics',
+				  description:
+					"The site uses GA to understand the readers better",
+				  value: true
+				}
+			  },
+
+			  /**
+			   * Show an icon to edit cookies later, when banner is closed.
+			  **/
+			  showEditIcon: true,
+
+			  /**
+			   * These are the functions which are run if a user opts-in to that category.
+			   * You should drop your cookies here (or set a variable to control the later dropping of cookies.
+			   *
+			   * If you are using svelte, you can use events instead - see the Svelte section below.
+			   **/
+			  categories: {
+				analytics: function() {
+				},
+				necessary: function() {
+				  console.log('default-necessary cookies')
+				  if (options['choices']['analytics']['value']){gaOptIn()}
+				  else {gaOptOut()}
+				}
+			  }
+			}
+				
+	
+	
+      GdprConsent.attachBanner(document.getElementById('banner'), options)
+    </script>
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
