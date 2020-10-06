@@ -16,8 +16,9 @@ The previous post explained, overall what factors affect health of the heart. Th
 This is called **local interpretability**
 Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.  
 
-### Please note: This is running in free servers and you may need to wait for it to load correctly.
-#  Your turn to play around
+#  Try it out
+#### Please note: This is running in free servers and you may need to wait for it to load correctly.
+
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
   <div class="cell text_cell">
