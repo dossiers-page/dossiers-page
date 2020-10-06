@@ -4,34 +4,19 @@ layout: jupyter_archive
 read_time: false
 comments: true
 share: true
+related: true
+tags:
+- EMA
+- exploratory_model_analysis
+- xai
+- explainable_ai
 ---
 
 The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning.  A better tool for a subject matter expert to try out is on the boundary conditions.  Here, he/she can put values which even confuses the experts; and see how well the model behaves. 
 This is called **local interpretability**
 Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.  
 
-### Please note: This is running in free servers and you may need to wait for it to load correctly. 
-## Example 1: Below image shows how the interactoin (below) is supposed to render 
-![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
-
-The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health. 
-
-## Example 2: Below image shows if we reduce the risk 
-
-![Local interpretation of heart disease](/assets/images/local_explanation_example_2_healthy.jpg)
-
-Here we can see if a person is healthy at 57 years, how the lab results and the corresponding risk would look like 
-
-## Example 3: An anomaly with cholesterol levels
-
-![Local interpretation of heart disease](/assets/images/local_explanation_example_3_anomaly.jpg)
-
-** Here the model thinks that high cholesterol is good for health.    **
-
-This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
-The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns. 
-
-
+### Please note: This is running in free servers and you may need to wait for it to load correctly.
 #  Your turn to play around
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
@@ -331,3 +316,23 @@ https://www.nature.com/articles/s41597-019-0206-3
 The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
 
 Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup
+
+## Below image shows how the interactoin (below) is supposed to render 
+![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
+
+The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health. 
+
+## Below image shows if we reduce the risk 
+
+![Local interpretation of heart disease](/assets/images/local_explanation_example_2_healthy.jpg)
+
+Here we can see if a person is healthy at 57 years, how the lab results and the corresponding risk would look like 
+
+## An anomaly with cholesterol levels
+
+![Local interpretation of heart disease](/assets/images/local_explanation_example_3_anomaly.jpg)
+
+** Here the model thinks that high cholesterol is good for health.    **
+
+This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
+The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.

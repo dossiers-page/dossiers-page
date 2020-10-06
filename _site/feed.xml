@@ -1,28 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-06T11:47:45+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Heart Disease Demo: How much risk for a single patient has</title><link href="http://localhost:4000/heart-disease-demo/" rel="alternate" type="text/html" title="Heart Disease Demo: How much risk for a single patient has" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>http://localhost:4000/heart-disease-demo</id><content type="html" xml:base="http://localhost:4000/heart-disease-demo/">&lt;p&gt;The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning.  A better tool for a subject matter expert to try out is on the boundary conditions.  Here, he/she can put values which even confuses the experts; and see how well the model behaves. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-06T11:51:00+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Heart Disease Demo: How much risk for a single patient has</title><link href="http://localhost:4000/heart-disease-demo/" rel="alternate" type="text/html" title="Heart Disease Demo: How much risk for a single patient has" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>http://localhost:4000/heart-disease-demo</id><content type="html" xml:base="http://localhost:4000/heart-disease-demo/">&lt;p&gt;The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning.  A better tool for a subject matter expert to try out is on the boundary conditions.  Here, he/she can put values which even confuses the experts; and see how well the model behaves. 
 This is called &lt;strong&gt;local interpretability&lt;/strong&gt;
 Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.&lt;/p&gt;
 
 &lt;h3 id=&quot;please-note-this-is-running-in-free-servers-and-you-may-need-to-wait-for-it-to-load-correctly&quot;&gt;Please note: This is running in free servers and you may need to wait for it to load correctly.&lt;/h3&gt;
-&lt;h2 id=&quot;example-1-below-image-shows-how-the-interactoin-below-is-supposed-to-render&quot;&gt;Example 1: Below image shows how the interactoin (below) is supposed to render&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_1.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health.&lt;/p&gt;
-
-&lt;h2 id=&quot;example-2-below-image-shows-if-we-reduce-the-risk&quot;&gt;Example 2: Below image shows if we reduce the risk&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_2_healthy.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here we can see if a person is healthy at 57 years, how the lab results and the corresponding risk would look like&lt;/p&gt;
-
-&lt;h2 id=&quot;example-3-an-anomaly-with-cholesterol-levels&quot;&gt;Example 3: An anomaly with cholesterol levels&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_3_anomaly.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;** Here the model thinks that high cholesterol is good for health.    **&lt;/p&gt;
-
-&lt;p&gt;This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
-The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.&lt;/p&gt;
-
 &lt;h1 id=&quot;your-turn-to-play-around&quot;&gt;Your turn to play around&lt;/h1&gt;
 &lt;div tabindex=&quot;-1&quot; id=&quot;notebook&quot; class=&quot;border-box-sizing&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
@@ -320,7 +300,27 @@ https://www.nature.com/articles/s41597-019-0206-3&lt;/p&gt;
 
 &lt;p&gt;The data set is consolidated and &lt;a href=&quot;https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final&quot;&gt;made available in kaggle&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Thanks to &lt;a href=&quot;https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification&quot;&gt;this wonderful post in Kaggle&lt;/a&gt; whch I have used in data cleanup&lt;/p&gt;</content><author><name>Giree</name></author><summary type="html">The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called local interpretability Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.</summary></entry><entry><title type="html">Are we progressing as human?</title><link href="http://localhost:4000/are-we-progressing-as-human/" rel="alternate" type="text/html" title="Are we progressing as human?" /><published>2020-09-20T00:00:00+05:30</published><updated>2020-09-20T00:00:00+05:30</updated><id>http://localhost:4000/are-we-progressing-as-human</id><content type="html" xml:base="http://localhost:4000/are-we-progressing-as-human/">&lt;p&gt;When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world?
+&lt;p&gt;Thanks to &lt;a href=&quot;https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification&quot;&gt;this wonderful post in Kaggle&lt;/a&gt; whch I have used in data cleanup&lt;/p&gt;
+
+&lt;h2 id=&quot;below-image-shows-how-the-interactoin-below-is-supposed-to-render&quot;&gt;Below image shows how the interactoin (below) is supposed to render&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_1.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health.&lt;/p&gt;
+
+&lt;h2 id=&quot;below-image-shows-if-we-reduce-the-risk&quot;&gt;Below image shows if we reduce the risk&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_2_healthy.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we can see if a person is healthy at 57 years, how the lab results and the corresponding risk would look like&lt;/p&gt;
+
+&lt;h2 id=&quot;an-anomaly-with-cholesterol-levels&quot;&gt;An anomaly with cholesterol levels&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_3_anomaly.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;** Here the model thinks that high cholesterol is good for health.    **&lt;/p&gt;
+
+&lt;p&gt;This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
+The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.&lt;/p&gt;</content><author><name>Giree</name></author><category term="EMA" /><category term="exploratory_model_analysis" /><category term="xai" /><category term="explainable_ai" /><summary type="html">The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called local interpretability Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.</summary></entry><entry><title type="html">Are we progressing as human?</title><link href="http://localhost:4000/are-we-progressing-as-human/" rel="alternate" type="text/html" title="Are we progressing as human?" /><published>2020-09-20T00:00:00+05:30</published><updated>2020-09-20T00:00:00+05:30</updated><id>http://localhost:4000/are-we-progressing-as-human</id><content type="html" xml:base="http://localhost:4000/are-we-progressing-as-human/">&lt;p&gt;When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world?
 &lt;img src=&quot;/assets/images/gapminder_babies_per_women.jpg&quot; alt=&quot;Number of children per woman &quot; /&gt;
     &lt;em&gt;picture courtsy:  gapminder.org&lt;/em&gt;&lt;/p&gt;
 
