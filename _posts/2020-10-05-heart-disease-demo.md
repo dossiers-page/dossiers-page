@@ -21,11 +21,21 @@ The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wi
 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
+      
+
+
+
   <div class="cell text_cell">
     <button class="js-nbinteract-widget">
       Loading widgets...
     </button>
   </div>
+
+
+
+
+  
+
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
     <div class="input">
@@ -223,8 +233,7 @@ The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wi
 <span class="n">display</span><span class="p">(</span><span class="n">control_layout</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Box</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="p">[</span><span class="n">risk_widget</span><span class="p">]))</span>
 <span class="n">risk_plot</span><span class="o">=</span><span class="n">interact_calc</span><span class="p">(</span><span class="n">get_current_prediction</span><span class="p">)</span>
-<span class="n">risk_plot</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;60%&#39;</span>
-                    <span class="p">)</span>
+
 <span class="n">risk_plot</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">button_color</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span>
 </pre></div>
 
