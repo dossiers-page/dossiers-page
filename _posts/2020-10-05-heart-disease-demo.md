@@ -306,7 +306,8 @@ Here is an example of local interpretablity and how the model behaves well and e
 </script>
     </div>
   </div>
-	#### Please note: This is running in free servers and you may need to wait for it to load correctly.
+
+Please note: This is running in free servers and you may need to wait for it to load correctly.
 
 ## Below image shows how the interactoin (below) is supposed to render 
 ![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
