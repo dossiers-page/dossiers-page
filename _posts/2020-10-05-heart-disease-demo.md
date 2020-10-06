@@ -16,6 +16,7 @@ The previous post explained, overall what factors affect health of the heart. Th
 This is called **local interpretability**
 Here is an example of local interpretablity and how the model behaves well and eratically, given the input conditions.  
 
+The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score.
 #  Try it out
 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
