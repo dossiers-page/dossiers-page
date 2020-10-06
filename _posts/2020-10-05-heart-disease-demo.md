@@ -2,6 +2,7 @@
 title: Heart Disease Demo
 layout: jupyter_archive
 read_time: false
+comments: true
 ---
 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
