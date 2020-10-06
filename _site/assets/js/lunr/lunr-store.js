@@ -23,8 +23,8 @@ var store = [{
         "url": "http://localhost:4000/are-we-progressing-as-human/",
         "teaser": null
       },{
-        "title": "Heart Disease Demo",
-        "excerpt":"Loading widgets... #HIDDEN import pandas import shap import joblib import ipywidgets as widgets %matplotlib inline import matplotlib.pyplot as plt import numpy as np import matplotlib.patches as mpatches from sklearn.base import TransformerMixin, BaseEstimator from pandas import Categorical, get_dummies import time from ipywidgets import interact, interact_manual,interactive from ipywidgets import Layout, Button, Box,...","categories": [],
+        "title": "Heart Disease Demo: How much risk for a single patient has",
+        "excerpt":"The previous post explained, overall what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/heart-disease-demo/",
         "teaser": null
