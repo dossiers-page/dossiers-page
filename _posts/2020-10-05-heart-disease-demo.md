@@ -307,17 +307,6 @@ Here is an example of local interpretablity and how the model behaves well and e
 </script>
     </div>
   </div>
-
-
-**Acknowledgements**
-
-The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3
-
-The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
-
-Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup
-
 ## Below image shows how the interactoin (below) is supposed to render 
 ![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
 
@@ -337,3 +326,14 @@ Here we can see if a person is healthy at 57 years, how the lab results and the 
 
 This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
 The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.
+
+
+
+**Acknowledgements**
+
+The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3
+
+The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
+
+Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup
