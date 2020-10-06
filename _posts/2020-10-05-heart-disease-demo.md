@@ -218,9 +218,9 @@ read_time: false
 <span class="n">display</span><span class="p">(</span><span class="n">control_layout</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">Box</span><span class="p">(</span><span class="n">children</span><span class="o">=</span><span class="p">[</span><span class="n">risk_widget</span><span class="p">]))</span>
 <span class="n">risk_plot</span><span class="o">=</span><span class="n">interact_calc</span><span class="p">(</span><span class="n">get_current_prediction</span><span class="p">)</span>
-<span class="n">risk_plot</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s1">&#39;flex&#39;</span><span class="p">,</span>
-                    <span class="n">flex_flow</span><span class="o">=</span><span class="s1">&#39;column&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;60%&#39;</span>
+<span class="n">risk_plot</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;60%&#39;</span>
                     <span class="p">)</span>
+<span class="n">risk_plot</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">button_color</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span>
 </pre></div>
 
     </div>
@@ -277,6 +277,8 @@ read_time: false
 </div>
 
   </div>
+
+
 
 <!-- Loads nbinteract package -->
 <script src="https://unpkg.com/nbinteract-core" async></script>
