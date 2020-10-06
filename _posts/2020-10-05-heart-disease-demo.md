@@ -1,6 +1,6 @@
 ---
 title: 'Heart Disease Demo: How much risk for a single patient has'
-layout: jupyter_archive
+layout: jupyter_single
 read_time: false
 comments: true
 share: true
