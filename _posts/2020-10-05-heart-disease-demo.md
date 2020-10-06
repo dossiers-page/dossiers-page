@@ -18,7 +18,7 @@ Here is an example of local interpretablity and how the model behaves well and e
 
 The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score.
 #  Try it out
-(Click on show widgets below, to load the application) 
+(If you are loading this for first time, click on show widgets below, to load the application. Best viewed in bigger screen) 
 <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
       
