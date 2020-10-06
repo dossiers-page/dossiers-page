@@ -19,7 +19,7 @@ Here is an example of local interpretablity and how the model behaves well and e
 The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score.
 
 ## A note on the parameters used in the demo
-1. Age: Patients Age in years
+1. Age: Age completed in years
 2.  Resting blood pressure : Level of blood pressure at resting mode in mm/HG (Systoloc)
 3.  Cholestrol: Serum cholestrol in mg/dl 
 4.  Maximum Heart Rate Achieved: Heart rate achieved while doing a threadmill test or exercise
