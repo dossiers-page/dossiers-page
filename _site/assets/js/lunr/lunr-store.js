@@ -28,4 +28,10 @@ var store = [{
         "tags": ["EMA","exploratory_model_analysis","xai","explainable_ai"],
         "url": "http://localhost:4000/heart-disease-demo/",
         "teaser": null
+      },{
+        "title": "Bring your own data",
+        "excerpt":"One reason I love Software Engineering is that, with right user experience; even a layman can start using any software tool. When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/bring-your-own-data/",
+        "teaser": null
       }]
