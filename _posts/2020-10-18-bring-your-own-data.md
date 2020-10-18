@@ -8,6 +8,8 @@ One reason I love Software Engineering is that, with right user experience; even
 Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc
 ## How to get started (animation below) 
 ![Instructions](/assets/images/how_to_use_the_analysis_portal.gif)
+
+If you are confused on how to interpret the charts below, please have a [look at the previous post](https://dossiers.page/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/)
 ### Please wait for the below application to load 
 <iframe src="https://warm-fjord-93528.herokuapp.com/" title="EMA" width='100%' height='4260' frameBorder="0"  allowtransparency="true"></iframe>
 
