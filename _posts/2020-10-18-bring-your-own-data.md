@@ -5,6 +5,7 @@ read_time: false
 
 One reason I love Software Engineering is that, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory. 
 
+Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc
 ## How to get started (animation below) 
 ![Instructions](/assets/images/how_to_use_the_analysis_portal.gif)
 ### Please wait for the below application to load 
@@ -33,7 +34,8 @@ For academic interests, this web sites captures the column headers of the data. 
 ## What if you are interested in more detailed analysis of your data
 Please drop a mail to giri@dossiers.page with your initial report from the page 
 ## Acknoledgements 
-1. The application's auto-detection and variable selection are part of [Mlbox](https://mlbox.readthedocs.io/en/latest/) 
-2. The application's auto-detection of statistical tests is made possible by [Tea-Lang](https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&t=1705s)
-3. The dataset in demo is  from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3 . The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final)
+1. The application's auto-detection and variable selection are part of MLBOX (https://mlbox.readthedocs.io/en/latest/) 
+2. The application's auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&t=1705s)
+3. The Application UI is built using Streamlit (https://www.streamlit.io/)
+4. The dataset in demo is  from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3 . The data set is consolidated and  made available in kaggle (https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final)
