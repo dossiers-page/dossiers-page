@@ -6,7 +6,13 @@ read_time: false
 One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory. 
 
 Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc
-## How to get started (animation below) 
+## How to get started 
+You would need a dataset with independant variables and the outcome variables.  Let us say, we are analysing Mushrooms are edible or poisonous. For thtat we collected properties of mushrooms. The concepts of the input table in CSV is shown below 
+
+![mushroom classification](/assets/images/csv_table_explanation_classification.jpg).  You can proceed with the instructions after preparing such data on your field of interest. 
+To try out sample datasets, please use [google dataset search](https://datasetsearch.research.google.com/search?query=health&docid=xvsrhW6jbJriqg%2BEAAAAAA%3D%3D&filters=WyJbXCJmaWxlX2Zvcm1hdF9jbGFzc1wiLFtcIjZcIl1dIl0%3D&property=ZmlsZV9mb3JtYXRfY2xhc3M%3D)
+
+### Animation explaining the steps
 ![Instructions](/assets/images/how_to_use_the_analysis_portal.gif)
 
 If you are confused on how to interpret the charts below, please have a [look at the previous post](https://dossiers.page/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/)
