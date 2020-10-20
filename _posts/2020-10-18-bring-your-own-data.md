@@ -9,7 +9,9 @@ Please add your comments at the bottom of the page on the use of such a tool/how
 ## How to get started 
 You would need a dataset with independant variables and the outcome variables.  Let us say, we are analysing Mushrooms are edible or poisonous. For thtat we collected properties of mushrooms. The concepts of the input table in CSV is shown below 
 
-![mushroom classification](/assets/images/csv_table_explanation_classification.jpg).  You can proceed with the instructions after preparing such data on your field of interest. 
+![mushroom classification](/assets/images/csv_table_explanation_classification.jpg) 
+
+You can proceed with the instructions after preparing such data on your field of interest. 
 To try out sample datasets, please use [google dataset search](https://datasetsearch.research.google.com/search?query=health&docid=xvsrhW6jbJriqg%2BEAAAAAA%3D%3D&filters=WyJbXCJmaWxlX2Zvcm1hdF9jbGFzc1wiLFtcIjZcIl1dIl0%3D&property=ZmlsZV9mb3JtYXRfY2xhc3M%3D)
 
 ### Animation explaining the steps
