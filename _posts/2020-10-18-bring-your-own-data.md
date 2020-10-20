@@ -3,7 +3,7 @@ title: Bring your own data
 read_time: false
 ---
 
-One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory. 
+One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.  This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out. 
 
 Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc
 ## How to get started 
