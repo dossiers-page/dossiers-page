@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-18T14:33:33+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Bring your own data</title><link href="http://localhost:4000/bring-your-own-data/" rel="alternate" type="text/html" title="Bring your own data" /><published>2020-10-18T00:00:00+05:30</published><updated>2020-10-18T00:00:00+05:30</updated><id>http://localhost:4000/bring-your-own-data</id><content type="html" xml:base="http://localhost:4000/bring-your-own-data/">&lt;p&gt;One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-20T20:31:36+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Bring your own data</title><link href="http://localhost:4000/bring-your-own-data/" rel="alternate" type="text/html" title="Bring your own data" /><published>2020-10-18T00:00:00+05:30</published><updated>2020-10-18T00:00:00+05:30</updated><id>http://localhost:4000/bring-your-own-data</id><content type="html" xml:base="http://localhost:4000/bring-your-own-data/">&lt;p&gt;One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.&lt;/p&gt;
 
 &lt;p&gt;Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc&lt;/p&gt;
 &lt;h2 id=&quot;how-to-get-started-animation-below&quot;&gt;How to get started (animation below)&lt;/h2&gt;
@@ -10,20 +10,20 @@
 
 &lt;h2 id=&quot;what-is-happening-behind-the-scenes&quot;&gt;What is happening behind the scenes&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;The application downloads your data&lt;/li&gt;
+  &lt;li&gt;The application downlods 500 rows of the data&lt;/li&gt;
   &lt;li&gt;Analyses the outcome/target variable and determines the analysis type (Classification/Regression)&lt;/li&gt;
+  &lt;li&gt;Remove constant/highly correlated/identifier/ high in null values&lt;/li&gt;
   &lt;li&gt;Encodes categorical variables&lt;/li&gt;
-  &lt;li&gt;Checks if all these variables are relevant for the analysis&lt;/li&gt;
   &lt;li&gt;Create an ensemble model (RandomForest) using the data&lt;/li&gt;
   &lt;li&gt;The relationships found by model is output using SHAP values (Top 10 features)&lt;/li&gt;
-  &lt;li&gt;Statistical tests between all the control variables and the outcome is run (using Tea-Lang)&lt;/li&gt;
+  &lt;li&gt;Statistical tests between all the control variables and the outcome  (displays up to top 10 values sorted with lowest P-Values)&lt;/li&gt;
   &lt;li&gt;Plots Partial Dependance Plot of top 3 continuous variables&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;limitations-and-caveats&quot;&gt;Limitations and Caveats&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;The analysis only covers two types (classification and regression)&lt;/li&gt;
-  &lt;li&gt;The analysis is done only on first 250 rows as it runs on a free server&lt;/li&gt;
+  &lt;li&gt;The analysis is done only on first 500 rows as it runs on a free server&lt;/li&gt;
   &lt;li&gt;If the analysis is classification, the shap plot importance is showing the outcome for one of the outcomes (say [male,female] –&amp;gt; Plots might be for Female)&lt;/li&gt;
   &lt;li&gt;The model is trained only with minimal number of trees (50)&lt;/li&gt;
   &lt;li&gt;Statistical outcomes are based on automated analysis by Tea-Lang (please see the video here for more details)&lt;/li&gt;
@@ -35,11 +35,8 @@
 &lt;p&gt;Please drop a mail to giri@dossiers.page with your initial report from the page&lt;/p&gt;
 &lt;h2 id=&quot;acknoledgements&quot;&gt;Acknoledgements&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;The application’s auto-detection and variable selection are part of MLBOX (https://mlbox.readthedocs.io/en/latest/)&lt;/li&gt;
   &lt;li&gt;The application’s auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&amp;amp;t=1705s)&lt;/li&gt;
   &lt;li&gt;The Application UI is built using Streamlit (https://www.streamlit.io/)&lt;/li&gt;
-  &lt;li&gt;The dataset in demo is  from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3 . The data set is consolidated and  made available in kaggle (https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final)&lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Giree</name></author><summary type="html">One of the reasons of I love Software Engineering is because, with right user experience; even a layman can start using any software tool. When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.</summary></entry><entry><title type="html">Heart Disease Demo: How much risk for a single patient has</title><link href="http://localhost:4000/heart-disease-demo/" rel="alternate" type="text/html" title="Heart Disease Demo: How much risk for a single patient has" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>http://localhost:4000/heart-disease-demo</id><content type="html" xml:base="http://localhost:4000/heart-disease-demo/">&lt;p&gt;The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called &lt;strong&gt;local interpretability&lt;/strong&gt;.  This post is an example of local interpretability and how the model behaves well and erratically, given the input conditions.&lt;/p&gt;
 
 &lt;p&gt;The method used here is the use of &lt;a href=&quot;https://en.wikipedia.org/wiki/Shapley_value&quot;&gt;SHAPELY  values&lt;/a&gt;. To get an idea how this works, think of a game where each team member contributes to the final score.&lt;/p&gt;

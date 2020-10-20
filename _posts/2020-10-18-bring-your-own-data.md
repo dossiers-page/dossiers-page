@@ -15,18 +15,18 @@ If you are confused on how to interpret the charts below, please have a [look at
 
 
 ## What is happening behind the scenes
-1. The application downloads your data
+1. The application downlods 500 rows of the data 
 2. Analyses the outcome/target variable and determines the analysis type (Classification/Regression) 
-3. Encodes categorical variables 
-4. Checks if all these variables are relevant for the analysis 
+3. Remove constant/highly correlated/identifier/ high in null values 
+4. Encodes categorical variables 
 5. Create an ensemble model (RandomForest) using the data
 6. The relationships found by model is output using SHAP values (Top 10 features)  
-7. Statistical tests between all the control variables and the outcome is run (using Tea-Lang) 
+7.  Statistical tests between all the control variables and the outcome  (displays up to top 10 values sorted with lowest P-Values) 
 8. Plots Partial Dependance Plot of top 3 continuous variables
 
 ## Limitations and Caveats 
 * The analysis only covers two types (classification and regression)
-* The analysis is done only on first 250 rows as it runs on a free server
+* The analysis is done only on first 500 rows as it runs on a free server
 * If the analysis is classification, the shap plot importance is showing the outcome for one of the outcomes (say [male,female] --> Plots might be for Female) 
 * The model is trained only with minimal number of trees (50) 
 * Statistical outcomes are based on automated analysis by Tea-Lang (please see the video here for more details) 
@@ -36,8 +36,5 @@ For academic interests, this web sites captures the column headers of the data. 
 ## What if you are interested in more detailed analysis of your data
 Please drop a mail to giri@dossiers.page with your initial report from the page 
 ## Acknoledgements 
-1. The application's auto-detection and variable selection are part of MLBOX (https://mlbox.readthedocs.io/en/latest/) 
-2. The application's auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&t=1705s)
-3. The Application UI is built using Streamlit (https://www.streamlit.io/)
-4. The dataset in demo is  from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3 . The data set is consolidated and  made available in kaggle (https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final)
+1. The application's auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&t=1705s)
+2. The Application UI is built using Streamlit (https://www.streamlit.io/)
