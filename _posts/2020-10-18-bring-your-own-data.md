@@ -7,7 +7,7 @@ One of the reasons of I love Software Engineering is  because, with right user e
 
 Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc
 ## How to get started 
-You would need a dataset with independant variables and the outcome variables.  Let us say, we are analysing Mushrooms are edible or poisonous. For thtat we collected properties of mushrooms. The concepts of the input table in CSV is shown below 
+You would need a dataset with independant variables and the outcome variables.  Let us say, we are analysing Mushrooms are edible or poisonous. For thtat we collected properties of mushrooms. The concepts of the input table in CSV is shown below .
 
 ![mushroom classification](/assets/images/csv_table_explanation_classification.jpg) 
 
@@ -46,3 +46,5 @@ Please drop a mail to giri@dossiers.page with your initial report from the page
 ## Acknoledgements 
 1. The application's auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&t=1705s)
 2. The Application UI is built using Streamlit (https://www.streamlit.io/)
+3. The shap value plots are using shap library (https://github.com/slundberg/shap/)
+4. The Plots are done using PDPBox  (https://github.com/SauceCat/PDPbox)
