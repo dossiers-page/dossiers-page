@@ -34,4 +34,10 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/bring-your-own-data/",
         "teaser": null
+      },{
+        "title": "Teapot: Simplifying statistical tests with a click",
+        "excerpt":"For beginners and non-programmers, getting statistical tests done could create headaches. What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) This is everything this post is about....","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click/",
+        "teaser": null
       }]
