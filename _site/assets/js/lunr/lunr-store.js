@@ -40,4 +40,10 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click/",
         "teaser": null
+      },{
+        "title": "Malayalam Transliterator with next word prediction",
+        "excerpt":"മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം എല്ലാവർക്കും കേരള പിരവി ആശംസകൾ This is an experiment on malayalam transliteration with next set of word prediction. Just start typing in Manglish. From suggestions, select the word and press space. Courtsy Transliteration API is from api.varnamproject.com (https://github.com/varnamproject) The front end was adapted from manghish repository (https://github.com/krishnanunnir/manglish)...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/malayalam-transliterator-with-next-word-prediction/",
+        "teaser": null
       }]
