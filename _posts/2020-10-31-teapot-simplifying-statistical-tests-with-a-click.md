@@ -13,8 +13,7 @@ All that you need is to drag and drop your data in CSV Format (only the first 50
 * Serves the results in a table 
 * As a user, you can select one of the independent variables and the application runs one-sided/two-sided statistical tests (if applicable) 
 
-Underneath the application is [tealang](https://github.com/tea-lang-org/tea-lang) (python library). To know about the library and why it was written, please watch the video below. 
-{% include video id="eyoAqNKTjGQ" provider="youtube" %}
+
 # Screenshots 
 ![data load ](/assets/images/wine_quality_file_load.jpg)
 
@@ -26,3 +25,12 @@ Underneath the application is [tealang](https://github.com/tea-lang-org/tea-lang
 
 
 <iframe src="https://shocking-cheateau-82195.herokuapp.com/" title="statistical tests" width='100%' height='1000' frameBorder="0"  allowtransparency="true"></iframe>
+
+
+## Tealang: The engine underneath the application 
+
+Underneath the application is [tealang](https://github.com/tea-lang-org/tea-lang) (python library). To know about the library and why it was written, please watch the video below. 
+{% include video id="eyoAqNKTjGQ" provider="youtube" %}
+
+## Source code
+[Tepot UI](https://github.com/tea-lang-org/teapot-ui)

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-01T22:33:29+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Malayalam Transliterator with next word prediction</title><link href="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/" rel="alternate" type="text/html" title="Malayalam Transliterator with next word prediction" /><published>2020-11-01T00:00:00+05:30</published><updated>2020-11-01T00:00:00+05:30</updated><id>http://localhost:4000/malayalam-transliterator-with-next-word-prediction</id><content type="html" xml:base="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/">&lt;p&gt;മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-05T20:49:59+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Malayalam Transliterator with next word prediction</title><link href="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/" rel="alternate" type="text/html" title="Malayalam Transliterator with next word prediction" /><published>2020-11-01T00:00:00+05:30</published><updated>2020-11-01T00:00:00+05:30</updated><id>http://localhost:4000/malayalam-transliterator-with-next-word-prediction</id><content type="html" xml:base="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/">&lt;p&gt;മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം 
 എല്ലാവർക്കും കേരള പിരവി ആശംസകൾ&lt;/p&gt;
 
 &lt;p&gt;This is an experiment on malayalam transliteration with next set of word prediction.  Just start typing in Manglish. From suggestions, select the word and press space.&lt;/p&gt;
@@ -22,14 +22,6 @@ This is everything this post is about.&lt;/p&gt;
   &lt;li&gt;As a user, you can select one of the independent variables and the application runs one-sided/two-sided statistical tests (if applicable)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Underneath the application is &lt;a href=&quot;https://github.com/tea-lang-org/tea-lang&quot;&gt;tealang&lt;/a&gt; (python library). To know about the library and why it was written, please watch the video below.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/eyoAqNKTjGQ&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
 &lt;h1 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/wine_quality_file_load.jpg&quot; alt=&quot;data load &quot; /&gt;&lt;/p&gt;
 
@@ -39,7 +31,20 @@ This is everything this post is about.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/teapot_ar_condition.jpg&quot; alt=&quot;data load &quot; /&gt;&lt;/p&gt;
 
-&lt;iframe src=&quot;https://shocking-cheateau-82195.herokuapp.com/&quot; title=&quot;statistical tests&quot; width=&quot;100%&quot; height=&quot;1000&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</content><author><name>Giree</name></author><summary type="html">For beginners and non-programmers, getting statistical tests done could create headaches. What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) This is everything this post is about.</summary></entry><entry><title type="html">Bring your own data</title><link href="http://localhost:4000/bring-your-own-data/" rel="alternate" type="text/html" title="Bring your own data" /><published>2020-10-18T00:00:00+05:30</published><updated>2020-10-18T00:00:00+05:30</updated><id>http://localhost:4000/bring-your-own-data</id><content type="html" xml:base="http://localhost:4000/bring-your-own-data/">&lt;p&gt;One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.  This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out.&lt;/p&gt;
+&lt;iframe src=&quot;https://shocking-cheateau-82195.herokuapp.com/&quot; title=&quot;statistical tests&quot; width=&quot;100%&quot; height=&quot;1000&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;tealang-the-engine-underneath-the-application&quot;&gt;Tealang: The engine underneath the application&lt;/h2&gt;
+
+&lt;p&gt;Underneath the application is &lt;a href=&quot;https://github.com/tea-lang-org/tea-lang&quot;&gt;tealang&lt;/a&gt; (python library). To know about the library and why it was written, please watch the video below.&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/eyoAqNKTjGQ&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;h2 id=&quot;source-code&quot;&gt;Source code&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tea-lang-org/teapot-ui&quot;&gt;Tepot UI&lt;/a&gt;&lt;/p&gt;</content><author><name>Giree</name></author><summary type="html">For beginners and non-programmers, getting statistical tests done could create headaches. What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) This is everything this post is about.</summary></entry><entry><title type="html">Bring your own data</title><link href="http://localhost:4000/bring-your-own-data/" rel="alternate" type="text/html" title="Bring your own data" /><published>2020-10-18T00:00:00+05:30</published><updated>2020-10-18T00:00:00+05:30</updated><id>http://localhost:4000/bring-your-own-data</id><content type="html" xml:base="http://localhost:4000/bring-your-own-data/">&lt;p&gt;One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.  This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out.&lt;/p&gt;
 
 &lt;p&gt;Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc&lt;/p&gt;
 &lt;h2 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h2&gt;
