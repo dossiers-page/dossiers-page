@@ -43,4 +43,11 @@ Some of the quotes from the book I enjoyed being
 * We can't do evidence-based policy without evidence 
 * Risk of you're afraid to leave your job and be an entrepreneur because that is where your health insurance is. You need to soften your damage risk 
 
+## Critical thoughts
+While I agree with most of those experimental setups and results, the example of 23 projects and 3 managers 
+
+"After the investment is made, there is a 50% chance it will make a profit of $2 million, and a 50% chance it will lose $1 million. (Notice that the expected payoff of this investment is $500,000, since half the time they gain $2 million—an expected gain of $1 million—and half the time they lose a million—an expected loss of half a million. The company was large enough that a million-dollar loss, or even several of them, would not threaten its solvency.) I then asked by a show of hands who would take on this project. Of the twenty-three executives, only three said they would do it."
+
+Even if I am in a room where this thought experiment is carried out, I will not be in the 3 managers who would say yes. The reason being, I may not be good at concluding the risks of a 1 million $ project especially in front of a CEO and an external person unless I am right to the smallest detail. Secondly, a project of 1 million$ would be a team effort and would be part of a "diversified portfolio" of things the team would do. That means if I am a manager allowed to handle that, the only thing company has to make sure is that 1 million dollars is not the only thing I bring to the table. Just make it as 30%-50% of what I bring to the table and I would take that risk easily (risk diversification and impact reduction) 
+
 Footnote: Does this make me a better person? Yes. Knowing what I do not know and knowing there are methods to detect and cope with those problems is the first step.
