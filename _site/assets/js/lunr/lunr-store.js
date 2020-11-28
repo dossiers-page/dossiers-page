@@ -46,4 +46,10 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/malayalam-transliterator-with-next-word-prediction/",
         "teaser": null
+      },{
+        "title": "Prospects and Nudges,  how human behavior influences economics",
+        "excerpt":"Do you often Think your loss of a 1000 bucks is compensated well by gain of 2000 Feel that there was already 3 negative incidents in a day and you made a 4th mistake just because you were pissed off with the earlier 3 incidents? Put money in buckets (emergency,...","categories": [],
+        "tags": ["books","inspiration"],
+        "url": "http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics/",
+        "teaser": null
       }]
