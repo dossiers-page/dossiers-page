@@ -1,5 +1,6 @@
 ---
 title: Bring your own data
+classes: wide
 read_time: false
 ---
 
