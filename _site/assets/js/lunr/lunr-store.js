@@ -52,4 +52,10 @@ var store = [{
         "tags": ["books","inspiration"],
         "url": "http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics/",
         "teaser": null
+      },{
+        "title": "Semantic Similarity  between documents using NLP, an illustration with job description and resume match",
+        "excerpt":"Suppose that there are a large set of Job Descriptions and you want to know the closest match of your profile against them. Normal way is to search for keywords and manually go through the words. An alternate approach is to use Natural Language Processing models which can tell the...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/semantic-similarity-between-documents-using-nlp-an-illustration-with-job-description-and-resume-match/",
+        "teaser": null
       }]

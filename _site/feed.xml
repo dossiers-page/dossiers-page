@@ -1,166 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-12T20:39:22+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Prospects and Nudges, how human behavior influences economics</title><link href="http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics/" rel="alternate" type="text/html" title="Prospects and Nudges, how human behavior influences economics" /><published>2020-11-28T00:00:00+05:30</published><updated>2020-11-28T00:00:00+05:30</updated><id>http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics</id><content type="html" xml:base="http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics/">&lt;p&gt;Do you often&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-10T11:47:35+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Semantic Similarity between documents using NLP, an illustration with job description and resume match</title><link href="http://localhost:4000/semantic-similarity-between-documents-using-nlp-an-illustration-with-job-description-and-resume-match/" rel="alternate" type="text/html" title="Semantic Similarity between documents using NLP, an illustration with job description and resume match" /><published>2021-03-10T00:00:00+05:30</published><updated>2021-03-10T00:00:00+05:30</updated><id>http://localhost:4000/semantic-similarity-between-documents-using-nlp-an-illustration-with-job-description-and-resume-match</id><content type="html" xml:base="http://localhost:4000/semantic-similarity-between-documents-using-nlp-an-illustration-with-job-description-and-resume-match/">&lt;p&gt;Suppose that there are a large set of Job Descriptions and you want to know the closest match of your profile against them. Normal way is to search for keywords and manually go through the words.  An alternate approach is to use Natural Language Processing models which can tell the distance between words (or documents).&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Think your loss of 1000 bucks is compensated well by a gain of 2000&lt;/li&gt;
-  &lt;li&gt;Feel that there were already 3 negative incidents in a day and you made the 4th mistake just because you were pissed off with the earlier 3 incidents?&lt;/li&gt;
-  &lt;li&gt;Put money in buckets (emergency, outing, shopping, school)&lt;/li&gt;
-  &lt;li&gt;Procastenate the investment plans and retirement plans&lt;/li&gt;
-  &lt;li&gt;If you reviewed your slides/proposals after 6 months, feel that “did I write that crap”&lt;/li&gt;
-  &lt;li&gt;Often take easier bets in office than taking risky routes because the reward is not worth the risk?&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;One of the best approaches to find semantic similarity between words, started with the work  “&lt;a href=&quot;https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf&quot;&gt;A Neural Probabilistic Language Model&lt;/a&gt;” by Yoshua Bengio ( 2003). The idea was very simple. Make a neural network which takes a bag of k words and predict the next word. After going through a large corpora, the weights of the model will give a representation of the words based on their semantic similarity.  Thus the “representation” of knowledge by the neural network is the best representation of the word.  The parameters in such a representation would be the number of simultaneous words in the bag and the size of the  vector (8 vectors/ 16 vectors/ 32 vectors etc).&lt;/p&gt;
 
-&lt;p&gt;I do think and act in these manners and interestingly found out that I am not a rational economist (ECON) and I am one of the most 99.999999 percent persons.  There are two parts to this kind of decision making. The time it takes to think and act (quick where rational thinking takes a backseat)  is the first one. The second one is the past (immediate/distant) incidents influencing the decisions irrationally.&lt;/p&gt;
+&lt;p&gt;This in layman sense is like using a PINCODE/Latitude-Longitude. Closer values would be closer to each other.  This also means that words like bank (&lt;strong&gt;homonyms&lt;/strong&gt;) will have almost equal probability to see river and cash as next words.&lt;/p&gt;
 
-&lt;p&gt;I thought this was an obvious fact and political and economic think tanks would have already made theories about this. It came as a shocking surprise to me that this field of behavioral economics is very new and all the market theories and policies formed never considered human errors and procrastinating behaviors. More interestingly, the stock market investments, the retirement plans to everything we believed in had lousy foundations till the late ’90s.  This is also the reason to over-invest in certain types of markets and the crashes that followed (like the housing bubble in the USA).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Efficient Estimation of Word Representations in Vector Space”&lt;/strong&gt; was the next breakthrough in this aspect and word2vec as a library became the most popular NLP library.&lt;/p&gt;
 
-&lt;p&gt;So, how do we take care of ourselves if 99.9999999999s of us are this way and often the others too in most of the emotional situations? How do we improve the voluntary sign-up for organ donations, making people to save more for the future, making a better judgment about stock market collapses by overinvesting?&lt;/p&gt;
+&lt;p&gt;This demonstration uses word2vec trained on job description datasets to show how efficiently it can capture the semantic similarity between keywords used and show the distance between them (lower the distance, better match).&lt;/p&gt;
 
-&lt;p&gt;This is exactly what is narrated in the book &lt;em&gt;Misbehaving, Making of behavioral economics&lt;/em&gt; is talking about. It is one hell of a journey by Prof Richard Thaler of fights with traditional thinkers of economics to study such anomalies and the way these studies went into making policies for USA, UK and eventually to many other countries.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/misbehaving_book.jpg&quot; alt=&quot;Misbehaving: Making of behavioral economics&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a complementary read to the most popular book by Kanheman who created the prospect theory “Thinking Fast and Slow”. For those who do not know about the book, it talks about common biases people have in the day to day life (and also how new-age marketing take advantage of it)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/thinking_fast_slow_book.jpg&quot; alt=&quot;Thinking fast and slow&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Some of the quotes from the book I enjoyed being&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The house money effect-along with a tendency to extrapolate recent returns into the future-facilitates financial bubbles&lt;/li&gt;
-  &lt;li&gt;A huge company had spent hundreds of millions of dollars in promotion and never bother to figure out how and why it worked&lt;/li&gt;
-  &lt;li&gt;The purely economic man is indeed close to being a social moron. Economic theory has been much preoccupied with this rational fool&lt;/li&gt;
-  &lt;li&gt;The problem is that the inside view is so natural and accessible that it can influence the judgments even of people who understand the concepts&lt;/li&gt;
-  &lt;li&gt;Of course coaches are Humans. They tend to do things the way they have been always done because those decisions will not be second-guessed b the boss. Following the conventional wisdom keeps you from getting fired&lt;/li&gt;
-  &lt;li&gt;People get promoted until they reach the level of incompetence&lt;/li&gt;
-  &lt;li&gt;Employees treat default options as suggestions&lt;/li&gt;
-  &lt;li&gt;A regulation is asymmetrically paternalistic if it creates large benefits for those who make errors&lt;/li&gt;
-  &lt;li&gt;A nudge is some small feature in the environment that attracts our attention and influences our behavior&lt;/li&gt;
-  &lt;li&gt;Prompted choice, a term both more accurate and less politically challenged. When dealing with Humans, words matter.&lt;/li&gt;
-  &lt;li&gt;We can’t do evidence-based policy without evidence&lt;/li&gt;
-  &lt;li&gt;Risk of you’re afraid to leave your job and be an entrepreneur because that is where your health insurance is. You need to soften your damage risk&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;critical-thoughts&quot;&gt;Critical thoughts&lt;/h2&gt;
-&lt;p&gt;While I agree with most of those experimental setups and results, the example of 23 projects and 3 managers&lt;/p&gt;
-
-&lt;p&gt;“After the investment is made, there is a 50% chance it will make a profit of $2 million, and a 50% chance it will lose $1 million. (Notice that the expected payoff of this investment is $500,000, since half the time they gain $2 million—an expected gain of $1 million—and half the time they lose a million—an expected loss of half a million. The company was large enough that a million-dollar loss, or even several of them, would not threaten its solvency.) I then asked by a show of hands who would take on this project. Of the twenty-three executives, only three said they would do it.”&lt;/p&gt;
-
-&lt;p&gt;Even if I am in a room where this thought experiment is carried out, I will not be in the 3 managers who would say yes. The reason being, I may not be good at concluding the risks of a 1 million $ project especially in front of a CEO and an external person unless I am right to the smallest detail. Secondly, a project of 1 million$ would be a team effort and would be part of a “diversified portfolio” of things the team would do. That means if I am a manager allowed to handle that, the only thing company has to make sure is that 1 million dollars is not the only thing I bring to the table. Just make it as 30%-50% of what I bring to the table and I would take that risk easily (risk diversification and impact reduction)&lt;/p&gt;
-
-&lt;p&gt;Footnote: Does this make me a better person? Yes. Knowing what I do not know and knowing there are methods to detect and cope with those problems is the first step.&lt;/p&gt;</content><author><name>Giree</name></author><category term="books" /><category term="inspiration" /><summary type="html">Do you often</summary></entry><entry><title type="html">Malayalam Transliterator with next word prediction</title><link href="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/" rel="alternate" type="text/html" title="Malayalam Transliterator with next word prediction" /><published>2020-11-01T00:00:00+05:30</published><updated>2020-11-01T00:00:00+05:30</updated><id>http://localhost:4000/malayalam-transliterator-with-next-word-prediction</id><content type="html" xml:base="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/">&lt;p&gt;മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം 
-എല്ലാവർക്കും കേരള പിരവി ആശംസകൾ&lt;/p&gt;
-
-&lt;p&gt;This is an experiment on malayalam transliteration with next set of word prediction.  Just start typing in Manglish. From suggestions, select the word and press space.&lt;/p&gt;
-&lt;iframe src=&quot;https://secure-shelf-14370.herokuapp.com/&quot; title=&quot;Malayalam Transliterator&quot; width=&quot;100%&quot; height=&quot;1000&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;courtsy&quot;&gt;Courtsy&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Transliteration API is from api.varnamproject.com (https://github.com/varnamproject)&lt;/li&gt;
-  &lt;li&gt;The front end was adapted from manghish repository (https://github.com/krishnanunnir/manglish)&lt;/li&gt;
-  &lt;li&gt;The word2vec data is obtained from AI4Bharat (https://indicnlp.ai4bharat.org/home/)&lt;/li&gt;
-  &lt;li&gt;The stemmer used in word2vec is from MLMorph (https://github.com/smc/mlmorph)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Giree</name></author><summary type="html">മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം എല്ലാവർക്കും കേരള പിരവി ആശംസകൾ</summary></entry><entry><title type="html">Teapot: Simplifying statistical tests with a click</title><link href="http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click/" rel="alternate" type="text/html" title="Teapot: Simplifying statistical tests with a click" /><published>2020-10-31T00:00:00+05:30</published><updated>2020-10-31T00:00:00+05:30</updated><id>http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click</id><content type="html" xml:base="http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click/">&lt;p&gt;For beginners and non-programmers, getting statistical tests done could create headaches.  What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) 
-This is everything this post is about.&lt;/p&gt;
-
-&lt;p&gt;All that you need is to drag and drop your data in CSV Format (only the first 500 rows will be processed in this demo).  The application does&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Data Cleanup&lt;/li&gt;
-  &lt;li&gt;Checks variable types (nominal/interval)&lt;/li&gt;
-  &lt;li&gt;Runs default relationship tests&lt;/li&gt;
-  &lt;li&gt;Serves the results in a table&lt;/li&gt;
-  &lt;li&gt;As a user, you can select one of the independent variables and the application runs one-sided/two-sided statistical tests (if applicable)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/wine_quality_file_load.jpg&quot; alt=&quot;data load &quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/wine_quality_default_tests.jpg&quot; alt=&quot;data load &quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/teapot_ar_condition_cleanup.jpg&quot; alt=&quot;data load &quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/teapot_ar_condition.jpg&quot; alt=&quot;data load &quot; /&gt;&lt;/p&gt;
-
-&lt;iframe src=&quot;https://shocking-cheateau-82195.herokuapp.com/&quot; title=&quot;statistical tests&quot; width=&quot;100%&quot; height=&quot;1000&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;tealang-the-engine-underneath-the-application&quot;&gt;Tealang: The engine underneath the application&lt;/h2&gt;
-
-&lt;p&gt;Underneath the application is &lt;a href=&quot;https://github.com/tea-lang-org/tea-lang&quot;&gt;tealang&lt;/a&gt; (python library). To know about the library and why it was written, please watch the video below.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/eyoAqNKTjGQ&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;h2 id=&quot;source-code&quot;&gt;Source code&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/tea-lang-org/teapot-ui&quot;&gt;Tepot UI&lt;/a&gt;&lt;/p&gt;</content><author><name>Giree</name></author><summary type="html">For beginners and non-programmers, getting statistical tests done could create headaches. What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) This is everything this post is about.</summary></entry><entry><title type="html">Bring your own data</title><link href="http://localhost:4000/bring-your-own-data/" rel="alternate" type="text/html" title="Bring your own data" /><published>2020-10-18T00:00:00+05:30</published><updated>2020-10-18T00:00:00+05:30</updated><id>http://localhost:4000/bring-your-own-data</id><content type="html" xml:base="http://localhost:4000/bring-your-own-data/">&lt;p&gt;One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.  This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out.&lt;/p&gt;
-
-&lt;p&gt;Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc&lt;/p&gt;
-&lt;h2 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h2&gt;
-&lt;p&gt;You would need a dataset with independant variables and the outcome variables.  Let us say, we are analysing Mushrooms are edible or poisonous. For thtat we collected properties of mushrooms. The concepts of the input table in CSV is shown below .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/csv_table_explanation_classification.jpg&quot; alt=&quot;mushroom classification&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can proceed with the instructions after preparing such data on your field of interest. 
-To try out sample datasets, please use &lt;a href=&quot;https://datasetsearch.research.google.com/search?query=health&amp;amp;docid=xvsrhW6jbJriqg%2BEAAAAAA%3D%3D&amp;amp;filters=WyJbXCJmaWxlX2Zvcm1hdF9jbGFzc1wiLFtcIjZcIl1dIl0%3D&amp;amp;property=ZmlsZV9mb3JtYXRfY2xhc3M%3D&quot;&gt;google dataset search&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;animation-explaining-the-steps&quot;&gt;Animation explaining the steps&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/how_to_use_the_analysis_portal.gif&quot; alt=&quot;Instructions&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are confused on how to interpret the charts below, please have a &lt;a href=&quot;https://dossiers.page/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/&quot;&gt;look at the previous post&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;please-wait-for-the-below-application-to-load&quot;&gt;Please wait for the below application to load&lt;/h3&gt;
-&lt;iframe src=&quot;http://210.16.101.216:8501/&quot; title=&quot;EMA&quot; width=&quot;100%&quot; height=&quot;4260&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;https://pythonapps.dossiers.page:8443/&quot; title=&quot;Resume-JD Matching&quot; width=&quot;100%&quot; height=&quot;1000&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</content><author><name>Giree</name></author><summary type="html">Suppose that there are a large set of Job Descriptions and you want to know the closest match of your profile against them. Normal way is to search for keywords and manually go through the words. An alternate approach is to use Natural Language Processing models which can tell the distance between words (or documents).</summary></entry><entry><title type="html">Prospects and Nudges, how human behavior influences economics</title><link href="http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics/" rel="alternate" type="text/html" title="Prospects and Nudges, how human behavior influences economics" /><published>2020-11-28T00:00:00+05:30</published><updated>2020-11-28T00:00:00+05:30</updated><id>http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics</id><content type="html" xml:base="http://localhost:4000/prospects-and-nudges-how-human-behavior-influences-economics/">Do you often 
 
-&lt;h2 id=&quot;what-is-happening-behind-the-scenes&quot;&gt;What is happening behind the scenes&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;The application downlods 500 rows of the data&lt;/li&gt;
-  &lt;li&gt;Analyses the outcome/target variable and determines the analysis type (Classification/Regression)&lt;/li&gt;
-  &lt;li&gt;Remove constant/highly correlated/identifier/ high in null values&lt;/li&gt;
-  &lt;li&gt;Encodes categorical variables&lt;/li&gt;
-  &lt;li&gt;Create an ensemble model (RandomForest) using the data&lt;/li&gt;
-  &lt;li&gt;The relationships found by model is output using SHAP values (Top 10 features)&lt;/li&gt;
-  &lt;li&gt;Statistical tests between all the control variables and the outcome  (displays up to top 10 values sorted with lowest P-Values)&lt;/li&gt;
-  &lt;li&gt;Plots Partial Dependance Plot of top 3 continuous variables&lt;/li&gt;
-&lt;/ol&gt;
+1. Think your loss of 1000 bucks is compensated well by a gain of 2000
+2. Feel that there were already 3 negative incidents in a day and you made the 4th mistake just because you were pissed off with the earlier 3 incidents?
+3. Put money in buckets (emergency, outing, shopping, school) 
+4. Procastenate the investment plans and retirement plans
+5. If you reviewed your slides/proposals after 6 months, feel that &quot;did I write that crap&quot; 
+6. Often take easier bets in office than taking risky routes because the reward is not worth the risk?
 
-&lt;h2 id=&quot;limitations-and-caveats&quot;&gt;Limitations and Caveats&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;The analysis only covers two types (classification and regression)&lt;/li&gt;
-  &lt;li&gt;The analysis is done only on first 500 rows as it runs on a free server&lt;/li&gt;
-  &lt;li&gt;If the analysis is classification, the shap plot importance is showing the outcome for one of the outcomes (say [male,female] –&amp;gt; Plots might be for Female)&lt;/li&gt;
-  &lt;li&gt;The model is trained only with minimal number of trees (50)&lt;/li&gt;
-  &lt;li&gt;Statistical outcomes are based on automated analysis by Tea-Lang (please see the video here for more details)&lt;/li&gt;
-&lt;/ul&gt;
+I do think and act in these manners and interestingly found out that I am not a rational economist (ECON) and I am one of the most 99.999999 percent persons.  There are two parts to this kind of decision making. The time it takes to think and act (quick where rational thinking takes a backseat)  is the first one. The second one is the past (immediate/distant) incidents influencing the decisions irrationally. 
 
-&lt;h2 id=&quot;what-happens-to-the-data-does-this-web-site-or-associated-sites-store-the-data&quot;&gt;What happens to the data/ does this web site or associated sites store the data?&lt;/h2&gt;
-&lt;p&gt;For academic interests, this web sites captures the column headers of the data.  But the data itself or the analysis results are not stored&lt;/p&gt;
-&lt;h2 id=&quot;what-if-you-are-interested-in-more-detailed-analysis-of-your-data&quot;&gt;What if you are interested in more detailed analysis of your data&lt;/h2&gt;
-&lt;p&gt;Please drop a mail to giri@dossiers.page with your initial report from the page&lt;/p&gt;
-&lt;h2 id=&quot;acknoledgements&quot;&gt;Acknoledgements&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;The application’s auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&amp;amp;t=1705s)&lt;/li&gt;
-  &lt;li&gt;The Application UI is built using Streamlit (https://www.streamlit.io/)&lt;/li&gt;
-  &lt;li&gt;The shap value plots are using shap library (https://github.com/slundberg/shap/)&lt;/li&gt;
-  &lt;li&gt;The Plots are done using PDPBox  (https://github.com/SauceCat/PDPbox)&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Giree</name></author><summary type="html">One of the reasons of I love Software Engineering is because, with right user experience; even a layman can start using any software tool. When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory. This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out.</summary></entry><entry><title type="html">Heart Disease Demo: How much risk for a single patient has</title><link href="http://localhost:4000/heart-disease-demo/" rel="alternate" type="text/html" title="Heart Disease Demo: How much risk for a single patient has" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>http://localhost:4000/heart-disease-demo</id><content type="html" xml:base="http://localhost:4000/heart-disease-demo/">&lt;p&gt;The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called &lt;strong&gt;local interpretability&lt;/strong&gt;.  This post is an example of local interpretability and how the model behaves well and erratically, given the input conditions.&lt;/p&gt;
+I thought this was an obvious fact and political and economic think tanks would have already made theories about this. It came as a shocking surprise to me that this field of behavioral economics is very new and all the market theories and policies formed never considered human errors and procrastinating behaviors. More interestingly, the stock market investments, the retirement plans to everything we believed in had lousy foundations till the late '90s.  This is also the reason to over-invest in certain types of markets and the crashes that followed (like the housing bubble in the USA). 
 
-&lt;p&gt;The method used here is the use of &lt;a href=&quot;https://en.wikipedia.org/wiki/Shapley_value&quot;&gt;SHAPELY  values&lt;/a&gt;. To get an idea how this works, think of a game where each team member contributes to the final score.&lt;/p&gt;
-&lt;h2 id=&quot;a-note-on-the-parameters-used-in-the-demo&quot;&gt;A note on the parameters used in the demo&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Age: Age completed in years&lt;/li&gt;
-  &lt;li&gt;Resting blood pressure : Level of blood pressure at resting mode in mm/HG (Systoloc)&lt;/li&gt;
-  &lt;li&gt;Cholesterol: Serum cholesterol in mg/dl&lt;/li&gt;
-  &lt;li&gt;Maximum Heart Rate Achieved: Heart rate achieved while doing a treadmill test or exercise&lt;/li&gt;
-  &lt;li&gt;ST_Depression/oldpeak: Exercise induced ST-depression in comparison with the state of rest&lt;/li&gt;
-  &lt;li&gt;Sex: Gender of patient (The data had only male and female)&lt;/li&gt;
-  &lt;li&gt;Chest Pain Type: Type of chest pain experienced by patient&lt;/li&gt;
-  &lt;li&gt;Fasting blood sugar: Blood sugar levels on fasting &amp;gt; 120 mg/dl represents as 1 in case of true and 0 as false&lt;/li&gt;
-  &lt;li&gt;Resting ecg: Result of electrocardiogram while at rest&lt;/li&gt;
-  &lt;li&gt;Exercise angina: Angina induced by exercise 0 depicting NO 1 depicting Yes&lt;/li&gt;
-  &lt;li&gt;ST slope: ST segment measured in terms of slope during peak exercise
-    &lt;h2 id=&quot;try-it-out&quot;&gt;Try it out&lt;/h2&gt;
-    &lt;p&gt;(If you are loading this for first time, click on show widgets below, to load the application. Best viewed in bigger screen)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+So, how do we take care of ourselves if 99.9999999999s of us are this way and often the others too in most of the emotional situations? How do we improve the voluntary sign-up for organ donations, making people to save more for the future, making a better judgment about stock market collapses by overinvesting?  
+
+This is exactly what is narrated in the book *Misbehaving, Making of behavioral economics* is talking about. It is one hell of a journey by Prof Richard Thaler of fights with traditional thinkers of economics to study such anomalies and the way these studies went into making policies for USA, UK and eventually to many other countries. 
+
+![Misbehaving: Making of behavioral economics](/assets/images/misbehaving_book.jpg) 
+
+This is a complementary read to the most popular book by Kanheman who created the prospect theory &quot;Thinking Fast and Slow&quot;. For those who do not know about the book, it talks about common biases people have in the day to day life (and also how new-age marketing take advantage of it) 
+
+![Thinking fast and slow](/assets/images/thinking_fast_slow_book.jpg)
+
+Some of the quotes from the book I enjoyed being 
+* The house money effect-along with a tendency to extrapolate recent returns into the future-facilitates financial bubbles
+* A huge company had spent hundreds of millions of dollars in promotion and never bother to figure out how and why it worked 
+* The purely economic man is indeed close to being a social moron. Economic theory has been much preoccupied with this rational fool
+* The problem is that the inside view is so natural and accessible that it can influence the judgments even of people who understand the concepts 
+* Of course coaches are Humans. They tend to do things the way they have been always done because those decisions will not be second-guessed b the boss. Following the conventional wisdom keeps you from getting fired
+* People get promoted until they reach the level of incompetence 
+* Employees treat default options as suggestions
+* A regulation is asymmetrically paternalistic if it creates large benefits for those who make errors 
+* A nudge is some small feature in the environment that attracts our attention and influences our behavior 
+* Prompted choice, a term both more accurate and less politically challenged. When dealing with Humans, words matter. 
+* We can't do evidence-based policy without evidence 
+* Risk of you're afraid to leave your job and be an entrepreneur because that is where your health insurance is. You need to soften your damage risk 
+
+## Critical thoughts
+While I agree with most of those experimental setups and results, the example of 23 projects and 3 managers 
+
+&quot;After the investment is made, there is a 50% chance it will make a profit of $2 million, and a 50% chance it will lose $1 million. (Notice that the expected payoff of this investment is $500,000, since half the time they gain $2 million—an expected gain of $1 million—and half the time they lose a million—an expected loss of half a million. The company was large enough that a million-dollar loss, or even several of them, would not threaten its solvency.) I then asked by a show of hands who would take on this project. Of the twenty-three executives, only three said they would do it.&quot;
+
+Even if I am in a room where this thought experiment is carried out, I will not be in the 3 managers who would say yes. The reason being, I may not be good at concluding the risks of a 1 million $ project especially in front of a CEO and an external person unless I am right to the smallest detail. Secondly, a project of 1 million$ would be a team effort and would be part of a &quot;diversified portfolio&quot; of things the team would do. That means if I am a manager allowed to handle that, the only thing company has to make sure is that 1 million dollars is not the only thing I bring to the table. Just make it as 30%-50% of what I bring to the table and I would take that risk easily (risk diversification and impact reduction) 
+
+Footnote: Does this make me a better person? Yes. Knowing what I do not know and knowing there are methods to detect and cope with those problems is the first step.</content><author><name>Giree</name></author><category term="books" /><category term="inspiration" /><summary type="html">Do you often</summary></entry><entry><title type="html">Malayalam Transliterator with next word prediction</title><link href="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/" rel="alternate" type="text/html" title="Malayalam Transliterator with next word prediction" /><published>2020-11-01T00:00:00+05:30</published><updated>2020-11-01T00:00:00+05:30</updated><id>http://localhost:4000/malayalam-transliterator-with-next-word-prediction</id><content type="html" xml:base="http://localhost:4000/malayalam-transliterator-with-next-word-prediction/">മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം 
+എല്ലാവർക്കും കേരള പിരവി ആശംസകൾ 
+
+This is an experiment on malayalam transliteration with next set of word prediction.  Just start typing in Manglish. From suggestions, select the word and press space.  
+&lt;iframe src=&quot;https://secure-shelf-14370.herokuapp.com/&quot; title=&quot;Malayalam Transliterator&quot; width='100%' height='1000' frameBorder=&quot;0&quot;  allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+
+## Courtsy 
+* Transliteration API is from api.varnamproject.com (https://github.com/varnamproject)
+* The front end was adapted from manghish repository (https://github.com/krishnanunnir/manglish) 
+* The word2vec data is obtained from AI4Bharat (https://indicnlp.ai4bharat.org/home/) 
+* The stemmer used in word2vec is from MLMorph (https://github.com/smc/mlmorph)</content><author><name>Giree</name></author><summary type="html">മലയാളം എഴുത്ത് ഉപകരണ പരീക്ഷണം എല്ലാവർക്കും കേരള പിരവി ആശംസകൾ</summary></entry><entry><title type="html">Teapot: Simplifying statistical tests with a click</title><link href="http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click/" rel="alternate" type="text/html" title="Teapot: Simplifying statistical tests with a click" /><published>2020-10-31T00:00:00+05:30</published><updated>2020-10-31T00:00:00+05:30</updated><id>http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click</id><content type="html" xml:base="http://localhost:4000/teapot-simplifying-statistical-tests-with-a-click/">For beginners and non-programmers, getting statistical tests done could create headaches.  What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) 
+This is everything this post is about. 
+
+All that you need is to drag and drop your data in CSV Format (only the first 500 rows will be processed in this demo).  The application does 
+* Data Cleanup
+* Checks variable types (nominal/interval) 
+* Runs default relationship tests 
+* Serves the results in a table 
+* As a user, you can select one of the independent variables and the application runs one-sided/two-sided statistical tests (if applicable) 
+
+
+# Screenshots 
+![data load ](/assets/images/wine_quality_file_load.jpg)
+
+![data load ](/assets/images/wine_quality_default_tests.jpg)
+
+![data load ](/assets/images/teapot_ar_condition_cleanup.jpg)
+
+![data load ](/assets/images/teapot_ar_condition.jpg)
+
+
+&lt;iframe src=&quot;https://shocking-cheateau-82195.herokuapp.com/&quot; title=&quot;statistical tests&quot; width='100%' height='1000' frameBorder=&quot;0&quot;  allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+
+## Tealang: The engine underneath the application 
+
+Underneath the application is [tealang](https://github.com/tea-lang-org/tea-lang) (python library). To know about the library and why it was written, please watch the video below. 
+{% include video id=&quot;eyoAqNKTjGQ&quot; provider=&quot;youtube&quot; %}
+
+## Source code
+[Tepot UI](https://github.com/tea-lang-org/teapot-ui)</content><author><name>Giree</name></author><summary type="html">For beginners and non-programmers, getting statistical tests done could create headaches. What if we only want to know if there is a relationship between one of the independent variable and the outcome (and leave the pre-conditions and finding suitable tests by a program) This is everything this post is about.</summary></entry><entry><title type="html">Bring your own data</title><link href="http://localhost:4000/bring-your-own-data/" rel="alternate" type="text/html" title="Bring your own data" /><published>2020-10-18T00:00:00+05:30</published><updated>2020-10-18T00:00:00+05:30</updated><id>http://localhost:4000/bring-your-own-data</id><content type="html" xml:base="http://localhost:4000/bring-your-own-data/">One of the reasons of I love Software Engineering is  because, with right user experience; even a layman can start using any software tool.  When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory.  This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out. 
+
+Please add your comments at the bottom of the page on the use of such a tool/how this could be made better etc
+## How to get started 
+You would need a dataset with independant variables and the outcome variables.  Let us say, we are analysing Mushrooms are edible or poisonous. For thtat we collected properties of mushrooms. The concepts of the input table in CSV is shown below .
+
+![mushroom classification](/assets/images/csv_table_explanation_classification.jpg) 
+
+You can proceed with the instructions after preparing such data on your field of interest. 
+To try out sample datasets, please use [google dataset search](https://datasetsearch.research.google.com/search?query=health&amp;docid=xvsrhW6jbJriqg%2BEAAAAAA%3D%3D&amp;filters=WyJbXCJmaWxlX2Zvcm1hdF9jbGFzc1wiLFtcIjZcIl1dIl0%3D&amp;property=ZmlsZV9mb3JtYXRfY2xhc3M%3D)
+
+### Animation explaining the steps
+![Instructions](/assets/images/how_to_use_the_analysis_portal.gif)
+
+If you are confused on how to interpret the charts below, please have a [look at the previous post](https://dossiers.page/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/)
+### Please wait for the below application to load 
+&lt;iframe src=&quot;https://pythonapps.dossiers.page/&quot; title=&quot;EMA&quot; width='100%' height='4260' frameBorder=&quot;0&quot;  allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+
+## What is happening behind the scenes
+1. The application downlods 500 rows of the data 
+2. Analyses the outcome/target variable and determines the analysis type (Classification/Regression) 
+3. Remove constant/highly correlated/identifier/ high in null values 
+4. Encodes categorical variables 
+5. Create an ensemble model (RandomForest) using the data
+6. The relationships found by model is output using SHAP values (Top 10 features)  
+7.  Statistical tests between all the control variables and the outcome  (displays up to top 10 values sorted with lowest P-Values) 
+8. Plots Partial Dependance Plot of top 3 continuous variables
+
+## Limitations and Caveats 
+* The analysis only covers two types (classification and regression)
+* The analysis is done only on first 500 rows as it runs on a free server
+* If the analysis is classification, the shap plot importance is showing the outcome for one of the outcomes (say [male,female] --&gt; Plots might be for Female) 
+* The model is trained only with minimal number of trees (50) 
+* Statistical outcomes are based on automated analysis by Tea-Lang (please see the video here for more details) 
+
+## What happens to the data/ does this web site or associated sites store the data?
+For academic interests, this web sites captures the column headers of the data.  But the data itself or the analysis results are not stored 
+## What if you are interested in more detailed analysis of your data
+Please drop a mail to giri@dossiers.page with your initial report from the page 
+## Acknoledgements 
+1. The application's auto-detection of statistical tests is made possible by (https://tea-lang.org/). Please watch the introduction video by the author of Tea-Lang here (https://www.youtube.com/watch?v=eyoAqNKTjGQ&amp;t=1705s)
+2. The Application UI is built using Streamlit (https://www.streamlit.io/)
+3. The shap value plots are using shap library (https://github.com/slundberg/shap/)
+4. The Plots are done using PDPBox  (https://github.com/SauceCat/PDPbox)</content><author><name>Giree</name></author><summary type="html">One of the reasons of I love Software Engineering is because, with right user experience; even a layman can start using any software tool. When it comes to data analysis, for subject experts (doctors, public health workers, bankers and many others), getting the head around R or Python or even automl is bit hard. This blog and the below tool is an experiment on bringing in data analysis without the theory. This is a very simple automl framework which is running in a server so that you do not need to install any software to try it out.</summary></entry><entry><title type="html">Heart Disease Demo: How much risk for a single patient has</title><link href="http://localhost:4000/heart-disease-demo/" rel="alternate" type="text/html" title="Heart Disease Demo: How much risk for a single patient has" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>http://localhost:4000/heart-disease-demo</id><content type="html" xml:base="http://localhost:4000/heart-disease-demo/">The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called **local interpretability**.  This post is an example of local interpretability and how the model behaves well and erratically, given the input conditions. 
+
+The method used here is the use of [SHAPELY  values](https://en.wikipedia.org/wiki/Shapley_value). To get an idea how this works, think of a game where each team member contributes to the final score. 
+## A note on the parameters used in the demo
+* Age: Age completed in years
+* Resting blood pressure : Level of blood pressure at resting mode in mm/HG (Systoloc)
+* Cholesterol: Serum cholesterol in mg/dl
+* Maximum Heart Rate Achieved: Heart rate achieved while doing a treadmill test or exercise
+* ST_Depression/oldpeak: Exercise induced ST-depression in comparison with the state of rest
+* Sex: Gender of patient (The data had only male and female)
+* Chest Pain Type: Type of chest pain experienced by patient
+* Fasting blood sugar: Blood sugar levels on fasting &gt; 120 mg/dl represents as 1 in case of true and 0 as false
+* Resting ecg: Result of electrocardiogram while at rest
+* Exercise angina: Angina induced by exercise 0 depicting NO 1 depicting Yes
+* ST slope: ST segment measured in terms of slope during peak exercise
+##  Try it out
+(If you are loading this for first time, click on show widgets below, to load the application. Best viewed in bigger screen) 
 &lt;div tabindex=&quot;-1&quot; id=&quot;notebook&quot; class=&quot;border-box-sizing&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
 			
@@ -434,7 +428,7 @@ To try out sample datasets, please use &lt;a href=&quot;https://datasetsearch.re
 
 
 &lt;!-- Loads nbinteract package --&gt;
-&lt;script src=&quot;https://unpkg.com/nbinteract-core&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/nbinteract-core&quot; async&gt;&lt;/script&gt;
 &lt;script&gt;
   (function setupNbinteract() {
     // If NbInteract hasn't loaded, wait one second and try again
@@ -456,276 +450,265 @@ To try out sample datasets, please use &lt;a href=&quot;https://datasetsearch.re
     &lt;/div&gt;
   &lt;/div&gt;
 
-&lt;p&gt;Please note: This is running in free servers and you may need to wait for it to load correctly.&lt;/p&gt;
+Please note: This is running in free servers and you may need to wait for it to load correctly.
 
-&lt;h2 id=&quot;below-image-shows-how-the-interaction-below-is-supposed-to-render&quot;&gt;Below image shows how the interaction (below) is supposed to render&lt;/h2&gt;
+## Below image shows how the interaction (below) is supposed to render
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_1.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
+![Local interpretation of heart disease](/assets/images/local_explanation_example_1.jpg)
 
-&lt;p&gt;The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health.&lt;/p&gt;
+The things on positive axis contribute positively to the heart risk and things on negative axis contribute towards good heart health. 
 
-&lt;h2 id=&quot;below-image-shows-if-we-reduce-the-risk&quot;&gt;Below image shows if we reduce the risk&lt;/h2&gt;
+## Below image shows if we reduce the risk 
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_2_healthy.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
+![Local interpretation of heart disease](/assets/images/local_explanation_example_2_healthy.jpg)
 
-&lt;p&gt;Here we can see if a person is healthy at 57 years, how the lab results and the corresponding risk would look like&lt;/p&gt;
+Here we can see if a person is healthy at 57 years, how the lab results and the corresponding risk would look like 
 
-&lt;h2 id=&quot;an-anomaly-with-cholesterol-levels&quot;&gt;An anomaly with cholesterol levels&lt;/h2&gt;
+## An anomaly with cholesterol levels
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/local_explanation_example_3_anomaly.jpg&quot; alt=&quot;Local interpretation of heart disease&quot; /&gt;&lt;/p&gt;
+![Local interpretation of heart disease](/assets/images/local_explanation_example_3_anomaly.jpg)
 
-&lt;p&gt;** Here the model thinks that high cholesterol is good for health.    **&lt;/p&gt;
+** Here the model thinks that high cholesterol is good for health.    **
 
-&lt;p&gt;This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
-The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.&lt;/p&gt;
+This is why it is always important to give interactive widgets to the subject matter experts (here a doctor) to try it out first than giving a set of charts. 
+The next iteration in a model building would be to look at the data and see what pattern emerges which makes this/ train a different model/ tune the model parameter to look for specific patterns.
 
-&lt;h3 id=&quot;disclaimer&quot;&gt;Disclaimer:&lt;/h3&gt;
-&lt;p&gt;This is a demonstration of how machine learning models can be trained on available patient data and the study of how the model works in new data. Please do consult a doctor for actual interpretations and risk factors.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Acknowledgements&lt;/strong&gt;&lt;/p&gt;
+### Disclaimer: 
+This is a demonstration of how machine learning models can be trained on available patient data and the study of how the model works in new data. Please do consult a doctor for actual interpretations and risk factors. 
 
-&lt;p&gt;The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3&lt;/p&gt;
+**Acknowledgements**
 
-&lt;p&gt;The data set is consolidated and &lt;a href=&quot;https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final&quot;&gt;made available in kaggle&lt;/a&gt;&lt;/p&gt;
+The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3
 
-&lt;p&gt;Thanks to &lt;a href=&quot;https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification&quot;&gt;this wonderful post in Kaggle&lt;/a&gt; which I have used in data clean up&lt;/p&gt;</content><author><name>Giree</name></author><category term="EMA" /><category term="exploratory_model_analysis" /><category term="xai" /><category term="explainable_ai" /><summary type="html">The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called local interpretability. This post is an example of local interpretability and how the model behaves well and erratically, given the input conditions.</summary></entry><entry><title type="html">Are we progressing as human?</title><link href="http://localhost:4000/are-we-progressing-as-human/" rel="alternate" type="text/html" title="Are we progressing as human?" /><published>2020-09-20T00:00:00+05:30</published><updated>2020-09-20T00:00:00+05:30</updated><id>http://localhost:4000/are-we-progressing-as-human</id><content type="html" xml:base="http://localhost:4000/are-we-progressing-as-human/">&lt;p&gt;When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world?
-&lt;img src=&quot;/assets/images/gapminder_babies_per_women.jpg&quot; alt=&quot;Number of children per woman &quot; /&gt;
-    &lt;em&gt;picture courtsy:  gapminder.org&lt;/em&gt;&lt;/p&gt;
+The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
 
-&lt;p&gt;If we look at the data, we might be surprised to see that the number of children per woman is falling.  That is counter-intuitive to common beliefs. To understand the reasons of such trend, one must understand the data analysis around the world, especially that on infant mortality. That means, families, when they realise that their child has a higher survival chance and access to birth control can stabilize the population. This is a miracle of public health systems, including vaccination policies, eradication programs like Polio, clean drinking water facilities and improved sanitization. 
-&lt;img src=&quot;/assets/images/polio_india_campaign.jpg&quot; alt=&quot;polio eradication in India, campaign&quot; /&gt;.&lt;/p&gt;
+Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) which I have used in data clean up</content><author><name>Giree</name></author><category term="EMA" /><category term="exploratory_model_analysis" /><category term="xai" /><category term="explainable_ai" /><summary type="html">The previous post explained, overall, what factors affect health of the heart. This is the global interpretability of machine learning. A better tool for a subject matter expert to try out is on the boundary conditions. Here, he/she can put values which even confuses the experts; and see how well the model behaves. This is called local interpretability. This post is an example of local interpretability and how the model behaves well and erratically, given the input conditions.</summary></entry><entry><title type="html">Are we progressing as human?</title><link href="http://localhost:4000/are-we-progressing-as-human/" rel="alternate" type="text/html" title="Are we progressing as human?" /><published>2020-09-20T00:00:00+05:30</published><updated>2020-09-20T00:00:00+05:30</updated><id>http://localhost:4000/are-we-progressing-as-human</id><content type="html" xml:base="http://localhost:4000/are-we-progressing-as-human/">When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world?
+![Number of children per woman ](/assets/images/gapminder_babies_per_women.jpg)
+    *picture courtsy:  gapminder.org* 
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/swach_bharat.JPG&quot; alt=&quot;Swach Bharat Abhiyan &quot; /&gt;.&lt;/p&gt;
+If we look at the data, we might be surprised to see that the number of children per woman is falling.  That is counter-intuitive to common beliefs. To understand the reasons of such trend, one must understand the data analysis around the world, especially that on infant mortality. That means, families, when they realise that their child has a higher survival chance and access to birth control can stabilize the population. This is a miracle of public health systems, including vaccination policies, eradication programs like Polio, clean drinking water facilities and improved sanitization. 
+![polio eradication in India, campaign](/assets/images/polio_india_campaign.jpg).  
 
-&lt;p&gt;If you are curious on how the world changed, and continues to change towards a better society, the place you need to look at is &lt;a href=&quot;https://gapminder.org/&quot;&gt;GapMinder&lt;/a&gt; or read the book by Hans Rosling (&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/b/b2/Factfulness_Ten_Reasons_We%27re_Wrong_About_the_World--and_Why_Things_Are_Better_Than_You_Think.jpg&quot; alt=&quot;Factfulness&quot; /&gt;&lt;br /&gt;
-&lt;em&gt;photo from wikimedia commons&lt;/em&gt;&lt;/p&gt;
+![Swach Bharat Abhiyan ](/assets/images/swach_bharat.JPG).  
 
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
+If you are curious on how the world changed, and continues to change towards a better society, the place you need to look at is [GapMinder](https://gapminder.org/) or read the book by Hans Rosling (![Factfulness](https://upload.wikimedia.org/wikipedia/en/b/b2/Factfulness_Ten_Reasons_We%27re_Wrong_About_the_World--and_Why_Things_Are_Better_Than_You_Think.jpg)  
+*photo from wikimedia commons*
+{% include video id=&quot;hVimVzgtD6w&quot; provider=&quot;youtube&quot; %}
+If you are too lazy and need inspiration to read this book, please look at the above TED Talk by Rosling
+## The poverty trap and effect of economic policies
+The next in line on the human progression is the poverty. Typical things poor people do is to do multiple jobs, start small business and see if they can save and move out. is this effective?   The challenges here are in the initial investment (Capital Investment) and sustaining the business during uncertainities or changes in situation.  Poor normally lends from loan sharks and not from banks. These behaviors from poor are extremely short sighted,  makes them stay poor like the victorian thought *this was how poor were*.  The long term view seems to come only when there is job stabilty and constant revenue soure.
 
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/hVimVzgtD6w&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
+How to understand those changes and causality analysis, why poor stay poor and what changes the state are described in the [book](https://www.amazon.in/Poor-Economics-Rethinking-Poverty-Ways/dp/8184002807) by Abhijit Banerjee 
 
-&lt;p&gt;If you are too lazy and need inspiration to read this book, please look at the above TED Talk by Rosling&lt;/p&gt;
-&lt;h2 id=&quot;the-poverty-trap-and-effect-of-economic-policies&quot;&gt;The poverty trap and effect of economic policies&lt;/h2&gt;
-&lt;p&gt;The next in line on the human progression is the poverty. Typical things poor people do is to do multiple jobs, start small business and see if they can save and move out. is this effective?   The challenges here are in the initial investment (Capital Investment) and sustaining the business during uncertainities or changes in situation.  Poor normally lends from loan sharks and not from banks. These behaviors from poor are extremely short sighted,  makes them stay poor like the victorian thought &lt;em&gt;this was how poor were&lt;/em&gt;.  The long term view seems to come only when there is job stabilty and constant revenue soure.&lt;/p&gt;
+![poor economics book](/assets/images/poor_economics.jpg). 
 
-&lt;p&gt;How to understand those changes and causality analysis, why poor stay poor and what changes the state are described in the &lt;a href=&quot;https://www.amazon.in/Poor-Economics-Rethinking-Poverty-Ways/dp/8184002807&quot;&gt;book&lt;/a&gt; by Abhijit Banerjee&lt;/p&gt;
+If you want to look further into the effect of leadership change or policy change and what statistical methods used in accessing these can be found at the course [Political Economy ](https://courses.edx.org/courses/course-v1:MITx+14.750x+3T2020/course/)
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/poor_economics.jpg&quot; alt=&quot;poor economics book&quot; /&gt;.&lt;/p&gt;
+![EDX Course on Political Economics](/assets/images/political_economy_course.jpg).</content><author><name>Giree</name></author><category term="books" /><summary type="html">When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world? picture courtsy: gapminder.org</summary></entry><entry><title type="html">Exploratory Model Analysis on Heart Disease Data</title><link href="http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/" rel="alternate" type="text/html" title="Exploratory Model Analysis on Heart Disease Data" /><published>2020-09-13T00:00:00+05:30</published><updated>2020-09-13T00:00:00+05:30</updated><id>http://localhost:4000/exploratory-model-analysis-on-heart-disease-data</id><content type="html" xml:base="http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/">Behind the scenes of the &quot;max heart rate achieved&quot; is good for heart.  This is for people who love programming. 
+Unlike the traditional style where we do EDA, we start with model building as shown below .  
+![exploratory model analysis steps](/assets/images/exploratory_model_analysis_flow.jpg)
+The sceptisism from traditional style programmers in ML is that the ensemble or deep learning models are not interpretable.  This post shows how to utilize the power of non-linearity and ensemble model (RandomForest) to study the relationship of heart disease (outcome) from the given data. 
+## Imports 
 
-&lt;p&gt;If you want to look further into the effect of leadership change or policy change and what statistical methods used in accessing these can be found at the course &lt;a href=&quot;https://courses.edx.org/courses/course-v1:MITx+14.750x+3T2020/course/&quot;&gt;Political Economy &lt;/a&gt;&lt;/p&gt;
+  ``` python
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/political_economy_course.jpg&quot; alt=&quot;EDX Course on Political Economics&quot; /&gt;.&lt;/p&gt;</content><author><name>Giree</name></author><category term="books" /><summary type="html">When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world? picture courtsy: gapminder.org</summary></entry><entry><title type="html">Exploratory Model Analysis on Heart Disease Data</title><link href="http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/" rel="alternate" type="text/html" title="Exploratory Model Analysis on Heart Disease Data" /><published>2020-09-13T00:00:00+05:30</published><updated>2020-09-13T00:00:00+05:30</updated><id>http://localhost:4000/exploratory-model-analysis-on-heart-disease-data</id><content type="html" xml:base="http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/">&lt;p&gt;Behind the scenes of the “max heart rate achieved” is good for heart.  This is for people who love programming. 
-Unlike the traditional style where we do EDA, we start with model building as shown below .&lt;br /&gt;
-&lt;img src=&quot;/assets/images/exploratory_model_analysis_flow.jpg&quot; alt=&quot;exploratory model analysis steps&quot; /&gt;
-The sceptisism from traditional style programmers in ML is that the ensemble or deep learning models are not interpretable.  This post shows how to utilize the power of non-linearity and ensemble model (RandomForest) to study the relationship of heart disease (outcome) from the given data.&lt;/p&gt;
-&lt;h2 id=&quot;imports&quot;&gt;Imports&lt;/h2&gt;
+import warnings
+warnings.filterwarnings('ignore')
+import pandas
+from sklearn.ensemble import RandomForestClassifier
+from eli5.sklearn import PermutationImportance
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;warnings&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;warnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filterwarnings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ignore'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestClassifier&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;eli5.sklearn&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PermutationImportance&lt;/span&gt;
+import numpy
+from scipy import stats
+import shap
+from pdpbox import pdp, info_plots  # for partial plots
+import seaborn as sns
+from sklearn.ensemble import RandomForestRegressor
+import matplotlib.pyplot as plt
 
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;shap&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pdpbox&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pdp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;info_plots&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# for partial plots
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;seaborn&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestRegressor&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+```
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+## Utility Functions 
 
-&lt;h2 id=&quot;utility-functions&quot;&gt;Utility Functions&lt;/h2&gt;
+  ``` python
+def get_categorical_variables(data_frame,threshold=0.70, top_n_values=10):
+    likely_categorical = []
+    for column in data_frame.columns:
+        if 1. * data_frame[column].value_counts(normalize=True).head(top_n_values).sum() &gt; threshold:
+            likely_categorical.append(column)
+    return likely_categorical
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_categorical_variables&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;threshold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.70&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;top_n_values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;likely_categorical&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value_counts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top_n_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;threshold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;likely_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;likely_categorical&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;train_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;feature_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_samples_leaf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                       &lt;span class=&quot;n&quot;&gt;max_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                       &lt;span class=&quot;n&quot;&gt;n_jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                       &lt;span class=&quot;n&quot;&gt;oob_score&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;feature_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_model&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;plot_model_interpretations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+def train_model(x,y):
+    feature_model = RandomForestClassifier(n_estimators=40, min_samples_leaf=3,
+                                                       max_features=0.5,
+                                                       n_jobs=-1,
+                                                       oob_score=True,max_depth=12,)
+    feature_model.fit(x, y)
+    return feature_model
+def plot_model_interpretations(model):
+    explainer = shap.TreeExplainer(model)
+    shap_values=explainer.shap_values(x)
+    shap.summary_plot(shap_values[1],x)
     
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;plot_partial_dependance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;base_features&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;pdp_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pdp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdp_isolate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                               &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;pdp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdp_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdp_dist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot_pts_dist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+def plot_partial_dependance(x, feature,model):
+    base_features = list(x.columns)
+    pdp_dist = pdp.pdp_isolate(model=model, dataset=x, model_features=x.columns,
+                               feature=feature)
+    pdp.pdp_plot(pdp_dist,feature , plot_pts_dist=True)
 		
 		
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;load-the-data-and-clean-up&quot;&gt;Load the data and clean up&lt;/h2&gt;
+```
+## Load the data and clean up 
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	
-&lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pandas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'heart_statlog_cleveland_hungary_final.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;categorical_columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_categorical_variables&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;numerical_columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;categorical_columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  ``` python
+	
+data_frame=pandas.read_csv('heart_statlog_cleveland_hungary_final.csv')
+categorical_columns=get_categorical_variables(data_frame)
+numerical_columns=[column for column in data_frame.columns if column not in categorical_columns]
 
-&lt;span class=&quot;c1&quot;&gt;# remove outliers 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zscore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numpy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zscore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numerical_columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;data_frame_no_outliers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zscore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pandas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_dummies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_outliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;drop_first&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;feature_columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'heart_disease'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;heart_disease&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plot_model_interpretations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+# remove outliers 
+zscore = numpy.abs(stats.zscore(data_frame[numerical_columns]))
+data_frame_no_outliers = data_frame[(zscore &lt; 3).all(axis=1)].copy()
+data_frame_no_categorical = pandas.get_dummies(data_frame_no_outliers, drop_first=True)
+feature_columns=[ i for i in data_frame_no_categorical.columns if i!='heart_disease']
+x=data_frame_no_categorical[feature_columns].copy()
+y=data_frame_no_categorical.heart_disease.values
+model=train_model(x,y)
+plot_model_interpretations(model)
 		
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;h2 id=&quot;the-output-shap-values--and-partial-dependance-plot-for-cholesterol&quot;&gt;The output (SHAP Values)  and partial dependance plot for Cholesterol&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/shap_initial_incorrect_values_heart_disease.jpg&quot; alt=&quot;shap values heart disease&quot; /&gt;&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plot_partial_dependance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/partial_dependance_plot_for_cholesterol_incorrect.jpg&quot; alt=&quot;Partial Dependance Plot, Cholesterol&quot; /&gt;&lt;/p&gt;
+## The output (SHAP Values)  and partial dependance plot for Cholesterol 
+![shap values heart disease](/assets/images/shap_initial_incorrect_values_heart_disease.jpg)
+  ``` python
+plot_partial_dependance(x,'cholesterol',model)
+```
+![Partial Dependance Plot, Cholesterol](/assets/images/partial_dependance_plot_for_cholesterol_incorrect.jpg)
 
-&lt;p&gt;This tells that, higher the cholesterol, lower the heart failure risk which is counter-intuitive. There is something wrong with the data. 
-Let us do a scatterplot to analyse what is the distribution of cholesterol in the data&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scatterplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'age'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'heart_disease'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+This tells that, higher the cholesterol, lower the heart failure risk which is counter-intuitive. There is something wrong with the data. 
+Let us do a scatterplot to analyse what is the distribution of cholesterol in the data 
+  ``` python
+plt.figure(figsize=(20,10))
+sns.scatterplot(x = 'cholesterol', y = 'age', hue = 'heart_disease', data = data_frame)
+```
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/missing_cholesterol_scatterplot.jpg&quot; alt=&quot;Missing Cholesterol Values, Scatterplot&quot; /&gt;&lt;/p&gt;
+![Missing Cholesterol Values, Scatterplot](/assets/images/missing_cholesterol_scatterplot.jpg)
 
-&lt;p&gt;Though there are multiple ways to impute, here let us try by training a regression model on known data.&lt;/p&gt;
+Though there are multiple ways to impute, here let us try by training a regression model on known data. 
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_train_frame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cholesterol_prediction&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data_frame_no_categorical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cholesterol_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestRegressor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_samples_leaf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                   &lt;span class=&quot;n&quot;&gt;max_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                   &lt;span class=&quot;n&quot;&gt;n_jobs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                   &lt;span class=&quot;n&quot;&gt;oob_score&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cholesterol_x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_train_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cholesterol_y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_train_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cholesterol_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cholesterol_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cholesterol_prediction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_prediction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;clean_frame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_train_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cholesterol_prediction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scatterplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'cholesterol'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'age'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'heart_disease'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clean_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  ``` python
+cholesterol_train_frame=data_frame_no_categorical[data_frame_no_categorical['cholesterol']&gt;0].copy()
+cholesterol_prediction=data_frame_no_categorical[data_frame_no_categorical['cholesterol']&lt;=0].copy()
+cholesterol_model = RandomForestRegressor(n_estimators=40, min_samples_leaf=3,
+                                                   max_features=0.5,
+                                                   n_jobs=-1,
+                                                   oob_score=True,max_depth=12)
+cholesterol_x=cholesterol_train_frame.drop('cholesterol',axis=1)
+cholesterol_y=cholesterol_train_frame.cholesterol.values
+cholesterol_model.fit(cholesterol_x, cholesterol_y)
+cholesterol_prediction['cholesterol']=cholesterol_model.predict(cholesterol_prediction.drop('cholesterol',axis=1))
+clean_frame=cholesterol_train_frame.append(cholesterol_prediction)
+plt.figure(figsize=(20,10))
+sns.scatterplot(x = 'cholesterol', y = 'age', hue = 'heart_disease', data = clean_frame)
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/cholesterol_scatterplot_clean.jpg&quot; alt=&quot;Scatterplot for cholesterol, after clean up&quot; /&gt;&lt;/p&gt;
+```
+![Scatterplot for cholesterol, after clean up](/assets/images/cholesterol_scatterplot_clean.jpg)
 
-&lt;h2 id=&quot;build-the-model-with-clean-cholesterol-features-and-plot&quot;&gt;Build the model with clean Cholesterol features and plot&lt;/h2&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clean_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clean_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;heart_disease&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plot_model_interpretations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+## Build the model with clean Cholesterol features and plot 
+  ``` python
+x=clean_frame[feature_columns].copy()
+y=clean_frame.heart_disease.values
+model=train_model(x,y)
+plot_model_interpretations(model)
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;p&gt;Using the image with explanations for simplicity (in code, only output plot comes) 
-&lt;img src=&quot;/assets/images/shap_values_heart_data.jpg&quot; alt=&quot;heart disease factors, shap plot&quot; /&gt;&lt;/p&gt;
+Using the image with explanations for simplicity (in code, only output plot comes) 
+![heart disease factors, shap plot](/assets/images/shap_values_heart_data.jpg)
 
-&lt;h2 id=&quot;partial-dependance-plot-for-continuous-variablesfactors&quot;&gt;Partial Dependance Plot for continuous variables/factors&lt;/h2&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numerical_column&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numerical_columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;plot_partial_dependance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numerical_column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/continuous_features_plot1.jpg&quot; alt=&quot;Heart disease partial dependance plot features 1&quot; /&gt;
-&lt;img src=&quot;/assets/images/continuous_features_plot2.jpg&quot; alt=&quot;Heart disease partial dependance plot features 2&quot; /&gt;&lt;/p&gt;
+## Partial Dependance Plot for continuous variables/factors
+```python
+for numerical_column in numerical_columns:
+    plot_partial_dependance(x,numerical_column,model)
+```
+![Heart disease partial dependance plot features 1](/assets/images/continuous_features_plot1.jpg)
+![Heart disease partial dependance plot features 2](/assets/images/continuous_features_plot2.jpg)
 
-&lt;p&gt;&lt;strong&gt;Acknowledgements&lt;/strong&gt;&lt;/p&gt;
+**Acknowledgements**
 
-&lt;p&gt;The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3&lt;/p&gt;
+The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3
 
-&lt;p&gt;The data set is consolidated and &lt;a href=&quot;https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final&quot;&gt;made available in kaggle&lt;/a&gt;&lt;/p&gt;
+The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
 
-&lt;p&gt;Thanks to &lt;a href=&quot;https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification&quot;&gt;this wonderful post in Kaggle&lt;/a&gt; whch I have used in data cleanup&lt;/p&gt;</content><author><name>Giree</name></author><category term="EMA" /><category term="exploratory_model_analysis" /><category term="machine_learning" /><category term="EDA" /><category term="xai" /><category term="explainable_ai" /><summary type="html">Behind the scenes of the “max heart rate achieved” is good for heart. This is for people who love programming. Unlike the traditional style where we do EDA, we start with model building as shown below . The sceptisism from traditional style programmers in ML is that the ensemble or deep learning models are not interpretable. This post shows how to utilize the power of non-linearity and ensemble model (RandomForest) to study the relationship of heart disease (outcome) from the given data. Imports</summary></entry><entry><title type="html">How to reduce heart disease risk? An exploratory Model Analysis on open data set</title><link href="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/" rel="alternate" type="text/html" title="How to reduce heart disease risk? An exploratory Model Analysis on open data set" /><published>2020-09-12T00:00:00+05:30</published><updated>2020-09-12T00:00:00+05:30</updated><id>http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set</id><content type="html" xml:base="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/">&lt;p&gt;Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?&lt;/li&gt;
-  &lt;li&gt;How much sugar and tempting high calorie food I can have, if I run/not run&lt;/li&gt;
-  &lt;li&gt;What exactly a fitness band would help me? Just measuring heart beat? Sleep?&lt;/li&gt;
-&lt;/ul&gt;
+Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup</content><author><name>Giree</name></author><category term="EMA" /><category term="exploratory_model_analysis" /><category term="machine_learning" /><category term="EDA" /><category term="xai" /><category term="explainable_ai" /><summary type="html">Behind the scenes of the “max heart rate achieved” is good for heart. This is for people who love programming. Unlike the traditional style where we do EDA, we start with model building as shown below . The sceptisism from traditional style programmers in ML is that the ensemble or deep learning models are not interpretable. This post shows how to utilize the power of non-linearity and ensemble model (RandomForest) to study the relationship of heart disease (outcome) from the given data. Imports</summary></entry><entry><title type="html">How to reduce heart disease risk? An exploratory Model Analysis on open data set</title><link href="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/" rel="alternate" type="text/html" title="How to reduce heart disease risk? An exploratory Model Analysis on open data set" /><published>2020-09-12T00:00:00+05:30</published><updated>2020-09-12T00:00:00+05:30</updated><id>http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set</id><content type="html" xml:base="http://localhost:4000/how-to-reduce-heart-disease-risk-an-exploratory-model-analysis-on-open-data-set/">Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary.  There are many questions I asked myself. Major ones are 
+* How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective?
+* How much sugar and tempting high calorie food I can have, if I run/not run
+* What exactly a fitness band would help me? Just measuring heart beat? Sleep?  
+ 
+Then I came across [this course in coursera ](https://www.coursera.org/learn/hacking-exercise-health/home/welcome)which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great.  
+![Hacking Exercise for Health](/assets/images/hacking_exercise_health_course.jpg). 
 
-&lt;p&gt;Then I came across &lt;a href=&quot;https://www.coursera.org/learn/hacking-exercise-health/home/welcome&quot;&gt;this course in coursera &lt;/a&gt;which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day.  Wow!  That is great.&lt;br /&gt;
-&lt;img src=&quot;/assets/images/hacking_exercise_health_course.jpg&quot; alt=&quot;Hacking Exercise for Health&quot; /&gt;.&lt;/p&gt;
+While there are studies already available from those professors, we can try something available in the open from [Kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final). 
 
-&lt;p&gt;While there are studies already available from those professors, we can try something available in the open from &lt;a href=&quot;https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final&quot;&gt;Kaggle&lt;/a&gt;.&lt;/p&gt;
+![Heart Disease Table](/assets/images/heart_disease_table.jpg)
+Out of these parameters, what we can control are only the following 
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/heart_disease_table.jpg&quot; alt=&quot;Heart Disease Table&quot; /&gt;
-Out of these parameters, what we can control are only the following&lt;/p&gt;
+1. Fasting blood sugar
+2. Cholesterol
+3. Maximum heart rate achieved
 
-&lt;ol&gt;
-  &lt;li&gt;Fasting blood sugar&lt;/li&gt;
-  &lt;li&gt;Cholesterol&lt;/li&gt;
-  &lt;li&gt;Maximum heart rate achieved&lt;/li&gt;
-&lt;/ol&gt;
+In exploratory model analysis, we can take the complete dataset, train the model and check how each of these features determine the heart risk.  Following plot is created after training the model and interpretation of features using [SHAP values](https://github.com/slundberg/shap). Factors on top are more important. Values on right favors heart disease. Values towards blue are lower for a given feature.  
+![Shap Values of factors associated to heart disease ](/assets/images/shap_values_heart_data.jpg)
 
-&lt;p&gt;In exploratory model analysis, we can take the complete dataset, train the model and check how each of these features determine the heart risk.  Following plot is created after training the model and interpretation of features using &lt;a href=&quot;https://github.com/slundberg/shap&quot;&gt;SHAP values&lt;/a&gt;. Factors on top are more important. Values on right favors heart disease. Values towards blue are lower for a given feature.&lt;br /&gt;
-&lt;img src=&quot;/assets/images/shap_values_heart_data.jpg&quot; alt=&quot;Shap Values of factors associated to heart disease &quot; /&gt;&lt;/p&gt;
+Since fasting blood surar is a boolean value, it is always better to be on lower side. No further check needed. 
 
-&lt;p&gt;Since fasting blood surar is a boolean value, it is always better to be on lower side. No further check needed.&lt;/p&gt;
+A partial dependance plot (PDPPlot) shows the effect of cholesterol 
+![Partial dependance plot for cholesterol](/assets/images/partial_dependance_plot_for_cholesterol.jpg)
+If we look at the shap plot and pdp, we see that the unit effect to heart disease is 0.05-0.15.  
 
-&lt;p&gt;A partial dependance plot (PDPPlot) shows the effect of cholesterol 
-&lt;img src=&quot;/assets/images/partial_dependance_plot_for_cholesterol.jpg&quot; alt=&quot;Partial dependance plot for cholesterol&quot; /&gt;
-If we look at the shap plot and pdp, we see that the unit effect to heart disease is 0.05-0.15.&lt;/p&gt;
+The most influencing factor in shap plot is the maximum heart rate achieved. 
+![Partial Dependance Plot for maximum heart rate achieved](/assets/images/partial_dependance_plot_for_max_heart_rate.jpg)
 
-&lt;p&gt;The most influencing factor in shap plot is the maximum heart rate achieved. 
-&lt;img src=&quot;/assets/images/partial_dependance_plot_for_max_heart_rate.jpg&quot; alt=&quot;Partial Dependance Plot for maximum heart rate achieved&quot; /&gt;&lt;/p&gt;
+We could lower the risk from 0.2 to 0.4 just by making sure that our heart rate can reach above 120. This shows that investing in a good fitness watch and doing a HIIT (high intensity interval training),  where we aim to achieve the maximum heart rate in lowest possible time. 
+## Is there an effect or shift of heart rate based on Gender? 
+![Heart rate for female](/assets/images/heart_rate_female.jpg)
+![Heart rate for male](/assets/images/heart_rate_male.jpg)
 
-&lt;p&gt;We could lower the risk from 0.2 to 0.4 just by making sure that our heart rate can reach above 120. This shows that investing in a good fitness watch and doing a HIIT (high intensity interval training),  where we aim to achieve the maximum heart rate in lowest possible time.&lt;/p&gt;
-&lt;h2 id=&quot;is-there-an-effect-or-shift-of-heart-rate-based-on-gender&quot;&gt;Is there an effect or shift of heart rate based on Gender?&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/heart_rate_female.jpg&quot; alt=&quot;Heart rate for female&quot; /&gt;
-&lt;img src=&quot;/assets/images/heart_rate_male.jpg&quot; alt=&quot;Heart rate for male&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;PS: This is only for an academic interest on interpretting what data shows. I am neither  qualified medical practitioner nor an expert on exercises. A separate post with details on the model building (including the code) is &lt;a href=&quot;https://dossiers.page/exploratory-model-analysis-on-heart-disease-data/&quot;&gt;available here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Acknowledgements&lt;/strong&gt;&lt;/p&gt;
+PS: This is only for an academic interest on interpretting what data shows. I am neither  qualified medical practitioner nor an expert on exercises. A separate post with details on the model building (including the code) is [available here](https://dossiers.page/exploratory-model-analysis-on-heart-disease-data/)
 
-&lt;p&gt;The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3&lt;/p&gt;
+**Acknowledgements**
 
-&lt;p&gt;The data set is consolidated and &lt;a href=&quot;https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final&quot;&gt;made available in kaggle&lt;/a&gt;&lt;/p&gt;
+The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
+https://www.nature.com/articles/s41597-019-0206-3
 
-&lt;p&gt;Thanks to &lt;a href=&quot;https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification&quot;&gt;this wonderful post in Kaggle&lt;/a&gt; whch I have used in data cleanup&lt;/p&gt;</content><author><name>Giree</name></author><category term="inspiration" /><category term="EMA" /><category term="exploratory_model_analysis" /><category term="machine_learning" /><summary type="html">Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary. There are many questions I asked myself. Major ones are How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective? How much sugar and tempting high calorie food I can have, if I run/not run What exactly a fitness band would help me? Just measuring heart beat? Sleep? Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day. Wow! That is great. .</summary></entry><entry><title type="html">Richard Feynman</title><link href="http://localhost:4000/richard-feynman/" rel="alternate" type="text/html" title="Richard Feynman" /><published>2020-09-05T00:00:00+05:30</published><updated>2020-09-05T00:00:00+05:30</updated><id>http://localhost:4000/richard-feynman</id><content type="html" xml:base="http://localhost:4000/richard-feynman/">&lt;p&gt;If you have not heard of him, he is&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;A drummer who can play Bongos  &lt;img src=&quot;https://calisphere.org/clip/500x500/41fffaae6236c995a02187609f1190cb&quot; alt=&quot;Drummer&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;An artist  &lt;img src=&quot;https://lh5.ggpht.com/__zoKJ77EvEc/SzjdjKxgguI/AAAAAAAACQU/XkOX5pj6XNU/feynman-art%20%2817%29%5B2%5D.jpg?imgmax=1200&quot; alt=&quot;Feynman's drawing&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Someone who could listen to the lowest level of “rocket science” and tell NASA that they should often believe their own engineers and move the launch dates rather than the top management calling the shots based on political reasons&lt;/li&gt;
-  &lt;li&gt;A guy who could ask the nobel prize committee if they could take away his name and not to give the award.&lt;/li&gt;
-  &lt;li&gt;Someone who told, knowing something and knowing the name of something are totally different things .&lt;/li&gt;
-&lt;/ol&gt;
+The data set is consolidated and [made available in kaggle](https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final) 
 
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
+Thanks to [this wonderful post in Kaggle](https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification) whch I have used in data cleanup</content><author><name>Giree</name></author><category term="inspiration" /><category term="EMA" /><category term="exploratory_model_analysis" /><category term="machine_learning" /><summary type="html">Age going above 35 is when some of us starts thinking about fitness (and obesity). While there are many points of inspiration, mine are purely on reducing heart disease risk, particularly when it comes as hereditary. There are many questions I asked myself. Major ones are How do I know if jogging for 5KM everyday is effective? If so, what part of it makes it effective? How much sugar and tempting high calorie food I can have, if I run/not run What exactly a fitness band would help me? Just measuring heart beat? Sleep? Then I came across this course in coursera which talks exactly about these questions and I was very delighted to hear that, most important factor is maintaining higher heart rate for short period of time which would keep you healthy. Even if you spend 10 minutes a day. Wow! That is great. .</summary></entry><entry><title type="html">Richard Feynman</title><link href="http://localhost:4000/richard-feynman/" rel="alternate" type="text/html" title="Richard Feynman" /><published>2020-09-05T00:00:00+05:30</published><updated>2020-09-05T00:00:00+05:30</updated><id>http://localhost:4000/richard-feynman</id><content type="html" xml:base="http://localhost:4000/richard-feynman/">If you have not heard of him, he is
+1. A drummer who can play Bongos  ![Drummer](https://calisphere.org/clip/500x500/41fffaae6236c995a02187609f1190cb)
+2. An artist  ![Feynman's drawing](https://lh5.ggpht.com/__zoKJ77EvEc/SzjdjKxgguI/AAAAAAAACQU/XkOX5pj6XNU/feynman-art%20%2817%29%5B2%5D.jpg?imgmax=1200)
+3. Someone who could listen to the lowest level of &quot;rocket science&quot; and tell NASA that they should often believe their own engineers and move the launch dates rather than the top management calling the shots based on political reasons
+4. A guy who could ask the nobel prize committee if they could take away his name and not to give the award.
+5. Someone who told, knowing something and knowing the name of something are totally different things .
+{% include video id=&quot;PsgBtOVzHKI&quot; provider=&quot;youtube&quot; %}
 
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/PsgBtOVzHKI&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;My love for Dr Richard Feynman started with my life at IIT-Madras. If you ever wonder, I knew him and you did not; don’t worry. I did not. And, to this date; I feel it is a shame not to know him earlier enough. Everything about Feynman started with the book “&lt;strong&gt;Surely You’re Joking, Mr. Feynman&lt;/strong&gt;!” When I started reading the book, I was intrigued by the way he was telling how he played with Physics, been part of atomic project, ran experiments, played around with one of the first kind of parallel processing algorithms, cracking safe, playing Bongos and even to go to great extends on simplicity in proving questions in Physics.
+My love for Dr Richard Feynman started with my life at IIT-Madras. If you ever wonder, I knew him and you did not; don't worry. I did not. And, to this date; I feel it is a shame not to know him earlier enough. Everything about Feynman started with the book &quot;**Surely You're Joking, Mr. Feynman**!&quot; When I started reading the book, I was intrigued by the way he was telling how he played with Physics, been part of atomic project, ran experiments, played around with one of the first kind of parallel processing algorithms, cracking safe, playing Bongos and even to go to great extends on simplicity in proving questions in Physics.
 If you are curious, have a look at
-&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/81F7f5hAXVL.jpg&quot; alt=&quot;surely you are joking: book link&quot; /&gt;&lt;/p&gt;
+![surely you are joking: book link](https://images-na.ssl-images-amazon.com/images/I/81F7f5hAXVL.jpg)
 
-&lt;p&gt;If you are too lazy to read the book, you could try the movie “Challenger Disaster”&lt;/p&gt;
+If you are too lazy to read the book, you could try the movie &quot;Challenger Disaster&quot; 
+{% include video id=&quot;bvv2-7iOD_8&quot; provider=&quot;youtube&quot; %}
 
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
+Two other books to read if you started liking Feynman, are 
+ [Genius: The life and Science of Richard Feynman](https://www.amazon.in/Genius-Life-Science-Richard-Feynman-ebook/dp/B004LRPQIO) 
+ ![Book Cover](https://m.media-amazon.com/images/I/51lzSdLfZeL.jpg)
 
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/bvv2-7iOD_8&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
+[ What do you care what other people think?](https://www.amazon.in/What-Care-Other-People-Think-ebook/dp/B002RI9YHS/) 
+![Book cover](https://images-na.ssl-images-amazon.com/images/I/91pFh3Sf2AL.jpg)
 
-&lt;p&gt;Two other books to read if you started liking Feynman, are 
- &lt;a href=&quot;https://www.amazon.in/Genius-Life-Science-Richard-Feynman-ebook/dp/B004LRPQIO&quot;&gt;Genius: The life and Science of Richard Feynman&lt;/a&gt; 
- &lt;img src=&quot;https://m.media-amazon.com/images/I/51lzSdLfZeL.jpg&quot; alt=&quot;Book Cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.amazon.in/What-Care-Other-People-Think-ebook/dp/B002RI9YHS/&quot;&gt; What do you care what other people think?&lt;/a&gt; 
-&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/91pFh3Sf2AL.jpg&quot; alt=&quot;Book cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;He is one teacher I did not meet, but inspired and changed a lot in me. 
-Happy teacher’s day&lt;/p&gt;</content><author><name>Giree</name></author><category term="movies" /><category term="biopic" /><category term="books" /><category term="inspiration" /><category term="physics" /><summary type="html">If you have not heard of him, he is A drummer who can play Bongos An artist Someone who could listen to the lowest level of “rocket science” and tell NASA that they should often believe their own engineers and move the launch dates rather than the top management calling the shots based on political reasons A guy who could ask the nobel prize committee if they could take away his name and not to give the award. Someone who told, knowing something and knowing the name of something are totally different things .</summary></entry></feed>
+He is one teacher I did not meet, but inspired and changed a lot in me. 
+Happy teacher's day</content><author><name>Giree</name></author><category term="movies" /><category term="biopic" /><category term="books" /><category term="inspiration" /><category term="physics" /><summary type="html">If you have not heard of him, he is A drummer who can play Bongos An artist Someone who could listen to the lowest level of “rocket science” and tell NASA that they should often believe their own engineers and move the launch dates rather than the top management calling the shots based on political reasons A guy who could ask the nobel prize committee if they could take away his name and not to give the award. Someone who told, knowing something and knowing the name of something are totally different things .</summary></entry></feed>
