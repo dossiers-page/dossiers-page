@@ -31,4 +31,4 @@ After that we can select those users who were not in the training set, take 10 o
 
 Search your favourite movie and check the recommendations.
 
-<iframe src="https://pythonapps.dossiers.page:9443/" title="Movie Recommender" width='100%' height='400' frameBorder="0"  allowtransparency="true"></iframe>
+<iframe src="https://pythonapps.dossiers.page:9443/" title="Movie Recommender" width='100%' height='500' frameBorder="0"  allowtransparency="true"></iframe>
