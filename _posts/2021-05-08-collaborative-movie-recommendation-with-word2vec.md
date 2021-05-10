@@ -1,6 +1,7 @@
 ---
 title: Collaborative Movie Recommendation with Word2vec
 layout: single
+classes: wide
 ---
 
 We use recommendations every day from friends. Let it be a movie/ a product you want to try. We take it or discard it based on two things. First is our own experience in the domain (say we liked most of the movies by Tom Hanks. The second is how close we know/think the friend chooses (he/she likes Tom Hanks most of the time).  This is what a recommender system tries to do.  
