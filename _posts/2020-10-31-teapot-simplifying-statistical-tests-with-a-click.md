@@ -33,4 +33,4 @@ Underneath the application is [tealang](https://github.com/tea-lang-org/tea-lang
 {% include video id="eyoAqNKTjGQ" provider="youtube" %}
 
 ## Source code
-[Tepot UI](https://github.com/tea-lang-org/teapot-ui)
+[Tepot UI](https://github.com/sahyagiri/osm_roads)

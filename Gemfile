@@ -4,6 +4,7 @@ gem 'jekyll-admin', group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-youtube"
 end	
+gem 'webrick'
 gem 'jemoji'
 gem 'jekyll-seo-tag'
 gem 'jekyll-archives' 
