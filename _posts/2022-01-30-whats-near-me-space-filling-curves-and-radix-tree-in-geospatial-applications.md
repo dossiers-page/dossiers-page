@@ -9,8 +9,7 @@ In geospatial applications, indexing and searching for things around a given poi
 
 We can divide the area by smaller squares and draw a non-overlapping curve passing through the squares. Each turn in the curve can be represented by a continuous value (one dimensional coordinate).  Smaller the square, the more accurate the point location in the curve will be.  For more details on Space Filling Curves, please watch the video below. 
 
-{% include video id="DgL49CFlM" provider="youtube" %}
-
+{% include video id="x-DgL49CFlM" provider="youtube" %}
 ## S2 Geometry
 ![S2Geometry (Source: s2geometry)](/assets/images/s2geometry.png)
 
