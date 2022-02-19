@@ -16,6 +16,8 @@ What it implies are
 
 Using this approach, the first thing we could do is to generate distinct key phrases from a given article text. The problem is caleed **Key phrase extraction**.  The uniqueness of this approach is that generated key phrases will be semantically distnict. 
 
+![Hashing Process )](/assets/images/steps_hilbert_hashing.png)
+
 ## Output from the package 
 
 ![Distinct Keywords Sample Output )](/assets/images/distinct_keywords_sample_output.png)
