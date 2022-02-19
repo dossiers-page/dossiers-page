@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-30T02:33:24+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">What’s near me? Space Filling Curves and Radix Tree in geospatial applications</title><link href="http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications/" rel="alternate" type="text/html" title="What’s near me? Space Filling Curves and Radix Tree in geospatial applications" /><published>2022-01-30T00:00:00+00:00</published><updated>2022-01-30T00:00:00+00:00</updated><id>http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications</id><content type="html" xml:base="http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications/"><![CDATA[<p>In geospatial applications, indexing and searching for things around a given point is the most common operation. Since there is latitude and longitude information, a regular look up table kind of approach is difficult and slow. The alternate approach is to use space filling curves.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-19T11:59:27+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dossiers</title><subtitle>Stories with a data twist</subtitle><author><name>Giree</name></author><entry><title type="html">Semantically Distinct Key Phrase Extraction</title><link href="http://localhost:4000/semantically-distinct-key-phrase-extraction/" rel="alternate" type="text/html" title="Semantically Distinct Key Phrase Extraction" /><published>2022-02-19T00:00:00+00:00</published><updated>2022-02-19T00:00:00+00:00</updated><id>http://localhost:4000/semantically-distinct-key-phrase-extraction</id><content type="html" xml:base="http://localhost:4000/semantically-distinct-key-phrase-extraction/"><![CDATA[<p>Working with Hilbert Space is fascinating. It is a hash function with prefix matching properties and two hashes can be compared just like a ZIP Code or a PIN Code.  This implies that a vector in positive space can be hashed. Combining this with a typical vector transformation in NLP (say word2vec) can generate one dimensional embeddings.</p>
+
+<p>To give an example,  consider the words in months (april, july, january) and mathematics (mathematics, deep learning, machine learning).  If we transform those words using a word vector embedding and do a hilbert hash,  it would look like the following figure</p>
+
+<p><img src="/assets/images/hilbert_hash_example_months_maths.png" alt="Hilbert Hash for various words from word2vec )" /></p>
+
+<p>What it implies are</p>
+<ul>
+  <li>If the topics are different, the hash prefix would differ</li>
+  <li>We can reduce all the words in an article to set of hashes and find most common prefixes they belong</li>
+  <li>The look up table can be saved as a dictionary for easy re-use. The original word vectors are no longer needed</li>
+  <li>A trie can do fast look up under each subtree and can summarize/rank keywords</li>
+</ul>
+
+<p>Using this approach, the first thing we could do is to generate distinct key phrases from a given article text. The problem is caleed <strong>Key phrase extraction</strong>.  The uniqueness of this approach is that generated key phrases will be semantically distnict.</p>
+
+<h2 id="output-from-the-package">Output from the package</h2>
+
+<p><img src="/assets/images/distinct_keywords_sample_output.png" alt="Distinct Keywords Sample Output )" /></p>
+<h2 id="generalization-and-benchmarks">Generalization and benchmarks</h2>
+<p>The approach can be generalized to any vector embedding technique and can do semantic sentence comparison or document comparison in an unsupervised setting.  The current implementation used Trie and SortedDict for making it one of the fastest implementation.  The approach does not require any training and shown a 31% recall score while doing benchmark with KPTimes Test Data Set (20000 articles) with manual keywords</p>
+
+<p><img src="/assets/images/kptimes_test_data_recall_score.png" alt="KP Times Test Data Recall Score )" /></p>
+
+<h4 id="github-link">Github Link</h4>
+<p><a href="https://github.com/sahyagiri/DistinctKeywords">DistinctKeywords</a></p>]]></content><author><name>Giree</name></author><summary type="html"><![CDATA[Working with Hilbert Space is fascinating. It is a hash function with prefix matching properties and two hashes can be compared just like a ZIP Code or a PIN Code. This implies that a vector in positive space can be hashed. Combining this with a typical vector transformation in NLP (say word2vec) can generate one dimensional embeddings.]]></summary></entry><entry><title type="html">What’s near me? Space Filling Curves and Radix Tree in geospatial applications</title><link href="http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications/" rel="alternate" type="text/html" title="What’s near me? Space Filling Curves and Radix Tree in geospatial applications" /><published>2022-01-30T00:00:00+00:00</published><updated>2022-01-30T00:00:00+00:00</updated><id>http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications</id><content type="html" xml:base="http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications/"><![CDATA[<p>In geospatial applications, indexing and searching for things around a given point is the most common operation. Since there is latitude and longitude information, a regular look up table kind of approach is difficult and slow. The alternate approach is to use space filling curves.</p>
 
 <p><img src="/assets/images/space_filling_curve.png" alt="Space Filling Curve (Source: Wikipedia)" /></p>
 
@@ -586,133 +611,4 @@ https://www.nature.com/articles/s41597-019-0206-3</p>
 
 <p>If you want to look further into the effect of leadership change or policy change and what statistical methods used in accessing these can be found at the course <a href="https://courses.edx.org/courses/course-v1:MITx+14.750x+3T2020/course/">Political Economy </a></p>
 
-<p><img src="/assets/images/political_economy_course.jpg" alt="EDX Course on Political Economics" />.</p>]]></content><author><name>Giree</name></author><category term="books" /><summary type="html"><![CDATA[When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world? picture courtsy: gapminder.org]]></summary></entry><entry><title type="html">Exploratory Model Analysis on Heart Disease Data</title><link href="http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/" rel="alternate" type="text/html" title="Exploratory Model Analysis on Heart Disease Data" /><published>2020-09-13T00:00:00+00:00</published><updated>2020-09-13T00:00:00+00:00</updated><id>http://localhost:4000/exploratory-model-analysis-on-heart-disease-data</id><content type="html" xml:base="http://localhost:4000/exploratory-model-analysis-on-heart-disease-data/"><![CDATA[<p>Behind the scenes of the “max heart rate achieved” is good for heart.  This is for people who love programming. 
-Unlike the traditional style where we do EDA, we start with model building as shown below .<br />
-<img src="/assets/images/exploratory_model_analysis_flow.jpg" alt="exploratory model analysis steps" />
-The sceptisism from traditional style programmers in ML is that the ensemble or deep learning models are not interpretable.  This post shows how to utilize the power of non-linearity and ensemble model (RandomForest) to study the relationship of heart disease (outcome) from the given data.</p>
-<h2 id="imports">Imports</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="p">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s">'ignore'</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">pandas</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">eli5.sklearn</span> <span class="kn">import</span> <span class="n">PermutationImportance</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
-<span class="kn">import</span> <span class="nn">shap</span>
-<span class="kn">from</span> <span class="nn">pdpbox</span> <span class="kn">import</span> <span class="n">pdp</span><span class="p">,</span> <span class="n">info_plots</span>  <span class="c1"># for partial plots
-</span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-
-</code></pre></div></div>
-
-<h2 id="utility-functions">Utility Functions</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_categorical_variables</span><span class="p">(</span><span class="n">data_frame</span><span class="p">,</span><span class="n">threshold</span><span class="o">=</span><span class="mf">0.70</span><span class="p">,</span> <span class="n">top_n_values</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="n">likely_categorical</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">data_frame</span><span class="p">.</span><span class="n">columns</span><span class="p">:</span>
-        <span class="k">if</span> <span class="mf">1.</span> <span class="o">*</span> <span class="n">data_frame</span><span class="p">[</span><span class="n">column</span><span class="p">].</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">).</span><span class="n">head</span><span class="p">(</span><span class="n">top_n_values</span><span class="p">).</span><span class="nb">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>
-            <span class="n">likely_categorical</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">likely_categorical</span>
-
-<span class="k">def</span> <span class="nf">train_model</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-    <span class="n">feature_model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-                                                       <span class="n">max_features</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
-                                                       <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
-                                                       <span class="n">oob_score</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">12</span><span class="p">,)</span>
-    <span class="n">feature_model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">feature_model</span>
-<span class="k">def</span> <span class="nf">plot_model_interpretations</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
-    <span class="n">explainer</span> <span class="o">=</span> <span class="n">shap</span><span class="p">.</span><span class="n">TreeExplainer</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
-    <span class="n">shap_values</span><span class="o">=</span><span class="n">explainer</span><span class="p">.</span><span class="n">shap_values</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">shap</span><span class="p">.</span><span class="n">summary_plot</span><span class="p">(</span><span class="n">shap_values</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">x</span><span class="p">)</span>
-    
-<span class="k">def</span> <span class="nf">plot_partial_dependance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">feature</span><span class="p">,</span><span class="n">model</span><span class="p">):</span>
-    <span class="n">base_features</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
-    <span class="n">pdp_dist</span> <span class="o">=</span> <span class="n">pdp</span><span class="p">.</span><span class="n">pdp_isolate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">dataset</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">model_features</span><span class="o">=</span><span class="n">x</span><span class="p">.</span><span class="n">columns</span><span class="p">,</span>
-                               <span class="n">feature</span><span class="o">=</span><span class="n">feature</span><span class="p">)</span>
-    <span class="n">pdp</span><span class="p">.</span><span class="n">pdp_plot</span><span class="p">(</span><span class="n">pdp_dist</span><span class="p">,</span><span class="n">feature</span> <span class="p">,</span> <span class="n">plot_pts_dist</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-		
-		
-</code></pre></div></div>
-<h2 id="load-the-data-and-clean-up">Load the data and clean up</h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	
-<span class="n">data_frame</span><span class="o">=</span><span class="n">pandas</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'heart_statlog_cleveland_hungary_final.csv'</span><span class="p">)</span>
-<span class="n">categorical_columns</span><span class="o">=</span><span class="n">get_categorical_variables</span><span class="p">(</span><span class="n">data_frame</span><span class="p">)</span>
-<span class="n">numerical_columns</span><span class="o">=</span><span class="p">[</span><span class="n">column</span> <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">data_frame</span><span class="p">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">categorical_columns</span><span class="p">]</span>
-
-<span class="c1"># remove outliers 
-</span><span class="n">zscore</span> <span class="o">=</span> <span class="n">numpy</span><span class="p">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">stats</span><span class="p">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">data_frame</span><span class="p">[</span><span class="n">numerical_columns</span><span class="p">]))</span>
-<span class="n">data_frame_no_outliers</span> <span class="o">=</span> <span class="n">data_frame</span><span class="p">[(</span><span class="n">zscore</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">).</span><span class="nb">all</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)].</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">data_frame_no_categorical</span> <span class="o">=</span> <span class="n">pandas</span><span class="p">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data_frame_no_outliers</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">feature_columns</span><span class="o">=</span><span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data_frame_no_categorical</span><span class="p">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="s">'heart_disease'</span><span class="p">]</span>
-<span class="n">x</span><span class="o">=</span><span class="n">data_frame_no_categorical</span><span class="p">[</span><span class="n">feature_columns</span><span class="p">].</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">y</span><span class="o">=</span><span class="n">data_frame_no_categorical</span><span class="p">.</span><span class="n">heart_disease</span><span class="p">.</span><span class="n">values</span>
-<span class="n">model</span><span class="o">=</span><span class="n">train_model</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-<span class="n">plot_model_interpretations</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
-		
-</code></pre></div></div>
-
-<h2 id="the-output-shap-values--and-partial-dependance-plot-for-cholesterol">The output (SHAP Values)  and partial dependance plot for Cholesterol</h2>
-<p><img src="/assets/images/shap_initial_incorrect_values_heart_disease.jpg" alt="shap values heart disease" /></p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot_partial_dependance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s">'cholesterol'</span><span class="p">,</span><span class="n">model</span><span class="p">)</span>
-</code></pre></div></div>
-<p><img src="/assets/images/partial_dependance_plot_for_cholesterol_incorrect.jpg" alt="Partial Dependance Plot, Cholesterol" /></p>
-
-<p>This tells that, higher the cholesterol, lower the heart failure risk which is counter-intuitive. There is something wrong with the data. 
-Let us do a scatterplot to analyse what is the distribution of cholesterol in the data</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">sns</span><span class="p">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">'cholesterol'</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">'age'</span><span class="p">,</span> <span class="n">hue</span> <span class="o">=</span> <span class="s">'heart_disease'</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data_frame</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p><img src="/assets/images/missing_cholesterol_scatterplot.jpg" alt="Missing Cholesterol Values, Scatterplot" /></p>
-
-<p>Though there are multiple ways to impute, here let us try by training a regression model on known data.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cholesterol_train_frame</span><span class="o">=</span><span class="n">data_frame_no_categorical</span><span class="p">[</span><span class="n">data_frame_no_categorical</span><span class="p">[</span><span class="s">'cholesterol'</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">].</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">cholesterol_prediction</span><span class="o">=</span><span class="n">data_frame_no_categorical</span><span class="p">[</span><span class="n">data_frame_no_categorical</span><span class="p">[</span><span class="s">'cholesterol'</span><span class="p">]</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">].</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">cholesterol_model</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-                                                   <span class="n">max_features</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
-                                                   <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
-                                                   <span class="n">oob_score</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">cholesterol_x</span><span class="o">=</span><span class="n">cholesterol_train_frame</span><span class="p">.</span><span class="n">drop</span><span class="p">(</span><span class="s">'cholesterol'</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">cholesterol_y</span><span class="o">=</span><span class="n">cholesterol_train_frame</span><span class="p">.</span><span class="n">cholesterol</span><span class="p">.</span><span class="n">values</span>
-<span class="n">cholesterol_model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">cholesterol_x</span><span class="p">,</span> <span class="n">cholesterol_y</span><span class="p">)</span>
-<span class="n">cholesterol_prediction</span><span class="p">[</span><span class="s">'cholesterol'</span><span class="p">]</span><span class="o">=</span><span class="n">cholesterol_model</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">cholesterol_prediction</span><span class="p">.</span><span class="n">drop</span><span class="p">(</span><span class="s">'cholesterol'</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-<span class="n">clean_frame</span><span class="o">=</span><span class="n">cholesterol_train_frame</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cholesterol_prediction</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">sns</span><span class="p">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s">'cholesterol'</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s">'age'</span><span class="p">,</span> <span class="n">hue</span> <span class="o">=</span> <span class="s">'heart_disease'</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">clean_frame</span><span class="p">)</span>
-
-</code></pre></div></div>
-<p><img src="/assets/images/cholesterol_scatterplot_clean.jpg" alt="Scatterplot for cholesterol, after clean up" /></p>
-
-<h2 id="build-the-model-with-clean-cholesterol-features-and-plot">Build the model with clean Cholesterol features and plot</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="o">=</span><span class="n">clean_frame</span><span class="p">[</span><span class="n">feature_columns</span><span class="p">].</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">y</span><span class="o">=</span><span class="n">clean_frame</span><span class="p">.</span><span class="n">heart_disease</span><span class="p">.</span><span class="n">values</span>
-<span class="n">model</span><span class="o">=</span><span class="n">train_model</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-<span class="n">plot_model_interpretations</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
-
-</code></pre></div></div>
-
-<p>Using the image with explanations for simplicity (in code, only output plot comes) 
-<img src="/assets/images/shap_values_heart_data.jpg" alt="heart disease factors, shap plot" /></p>
-
-<h2 id="partial-dependance-plot-for-continuous-variablesfactors">Partial Dependance Plot for continuous variables/factors</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">numerical_column</span> <span class="ow">in</span> <span class="n">numerical_columns</span><span class="p">:</span>
-    <span class="n">plot_partial_dependance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">numerical_column</span><span class="p">,</span><span class="n">model</span><span class="p">)</span>
-</code></pre></div></div>
-<p><img src="/assets/images/continuous_features_plot1.jpg" alt="Heart disease partial dependance plot features 1" />
-<img src="/assets/images/continuous_features_plot2.jpg" alt="Heart disease partial dependance plot features 2" /></p>
-
-<p><strong>Acknowledgements</strong></p>
-
-<p>The dataset is taken from three other research datasets used in different research papers. The Nature article listing heart disease database and names of popular datasets used in various heart disease research is shared below.
-https://www.nature.com/articles/s41597-019-0206-3</p>
-
-<p>The data set is consolidated and <a href="https://www.kaggle.com/sid321axn/heart-statlog-cleveland-hungary-final">made available in kaggle</a></p>
-
-<p>Thanks to <a href="https://www.kaggle.com/sid321axn/stacked-ensemble-for-heart-disease-classification">this wonderful post in Kaggle</a> whch I have used in data cleanup</p>]]></content><author><name>Giree</name></author><category term="EMA" /><category term="exploratory_model_analysis" /><category term="machine_learning" /><category term="EDA" /><category term="xai" /><category term="explainable_ai" /><summary type="html"><![CDATA[Behind the scenes of the “max heart rate achieved” is good for heart. This is for people who love programming. Unlike the traditional style where we do EDA, we start with model building as shown below . The sceptisism from traditional style programmers in ML is that the ensemble or deep learning models are not interpretable. This post shows how to utilize the power of non-linearity and ensemble model (RandomForest) to study the relationship of heart disease (outcome) from the given data. Imports]]></summary></entry></feed>
+<p><img src="/assets/images/political_economy_course.jpg" alt="EDX Course on Political Economics" />.</p>]]></content><author><name>Giree</name></author><category term="books" /><summary type="html"><![CDATA[When I see the news like China and India has the highest population and in a race of population growth; I wonder how easy it is to have resources for all. Is this a correct understanding of the world? picture courtsy: gapminder.org]]></summary></entry></feed>

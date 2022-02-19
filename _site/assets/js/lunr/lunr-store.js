@@ -70,4 +70,10 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/whats-near-me-space-filling-curves-and-radix-tree-in-geospatial-applications/",
         "teaser": null
+      },{
+        "title": "Semantically Distinct Key Phrase Extraction",
+        "excerpt":"Working with Hilbert Space is fascinating. It is a hash function with prefix matching properties and two hashes can be compared just like a ZIP Code or a PIN Code. This implies that a vector in positive space can be hashed. Combining this with a typical vector transformation in NLP...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/semantically-distinct-key-phrase-extraction/",
+        "teaser": null
       }]
