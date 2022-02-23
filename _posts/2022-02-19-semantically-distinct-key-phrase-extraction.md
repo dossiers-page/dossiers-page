@@ -23,9 +23,17 @@ Using this approach, the first thing we could do is to generate distinct key phr
 ![Distinct Keywords Sample Output )](/assets/images/distinct_keywords_sample_output.png)
 ## Generalization and benchmarks
 The approach can be generalized to any vector embedding technique and can do semantic sentence comparison or document comparison in an unsupervised setting.  The current implementation used Trie and SortedDict for making it one of the fastest implementation.  The approach does not require any training and shown a 31% recall score while doing benchmark with KPTimes Test Data Set (20000 articles) with manual keywords 
+Same preprocessing and comparison was done with KeyBert with top_n as 16 and compared. 
 
-![KP Times Test Data Recall Score )](/assets/images/kptimes_test_data_recall_score.png)
+![KP Times Test Data Recall Score )](/assets/images/benchmark_keybert_distinct_keywords_kptimes.png)
 
+## Supported languages
+1. English (default) using custom word2vec trained on simplewiki.
+2.  German (on test. Need support from native speakers).
+3.  French (on test. Need support from native speakers).
+4.  Italian (on test. Need support from native speakers).
+5.  Portuguese (on test. Need support from native speakers).
+6.  Spanish (on test. Need support from native speakers).
 
 #### Github Link 
 [DistinctKeywords](https://github.com/sahyagiri/DistinctKeywords)
